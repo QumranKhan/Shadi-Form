@@ -1,338 +1,361 @@
-  <!DOCTYPE html>
-<html>
-  <head><link rel="stylesheet" type="text/css" href="/sTYLE.CSS" /></head>  
-<body>
-   
-   <h1>Meri Shadi Profile Form</h1>
- <p>اردو میں پڑھنے کے لیے زبان کا انتخاب کریں۔</p>
-  <div id="google_translate_element"></div>
-  <script type="text/javascript">
-  function googleTranslateElementInit() {
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!---Bootstrap is linked here-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!---CSS stylesheet is linked here-->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    
+    <!---Title of document-->
+    <title>Meri Shadi Profile Form</title>
+  </head>  
+
+  <body>
+    
+    
+    <h1>Meri Shadi</h1>
+
+  
+    <span>اردو میں پڑھنے کے لیے زبان کا انتخاب کریں۔</span>
+
+    <!--TO DO: Change "Select language" option to a prompt when a user opens the website-->
+    <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+
+    function googleTranslateElementInit() {
     new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-  }
-  </script>
+    }
+    </script>
   
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   
 
-  <div id="wrapper">
-<h2>Hadith</h2> 
-<ul>
-<li><p>Prophet Muhammad (pbuh) said: "The most perfect man is the one who is best in conduct with his wife".</p></li>
-<li><p>Prophet Muhammad (PBUH) said: “A woman may be married for four reasons: for her property, for her rank, for her beauty, and for her religion (and character), so marry the one who is best in the religion and character and prosper.” (Bukhari).<br></p></li>
-<li><p>This hadith makes it evident that above everything the one thing that should be considered while getting married to someone is his or her <b><i>"character"</i></b>. The character or religiousness of a person is more important than the property, than the rank and beauty.<br></p></li>
-<li><p>Although this hadith is directed towards selection of women, however, if women were to select men, they could also follow the same criteria and select men on the bases of their <b><i>"character"</i></b> and not their wealth.</p></br><br></li>
-</ul>  
+    <div id="wrapper">
+    <h2>Hadith</h2> 
+    <ul>
+      <li>Prophet Muhammad (pbuh) said: "The most perfect man is the one who is best in conduct with his wife".</li>
+      <li>Prophet Muhammad (PBUH) said: “A woman may be married for four reasons: for her property, for her rank, for her beauty, and for her religion (and character), so marry the one who is best in the religion and character and prosper.” (Bukhari).<br></li>
+      <li>This hadith makes it evident that above everything the one thing that should be considered while getting married to someone is his or her <b><i>"character"</i></b>. The character or religiousness of a person is more important than the property, than the rank and beauty.<br></li>
+      <li>Although this hadith is directed towards selection of women, however, if women were to select men, they could also follow the same criteria and select men on the bases of their <b><i>"character"</i></b> and not their wealth.</br><br></li>
+    </ul>
+    </div>
 
-  <!-- make website more attrative and easy to use   --> 
+    <hr>
+ 
+    <details>  
+    <summary Style="color:rgb(15, 5, 5);"> Click <b><u>here</u></b> if you already have a profile !</p><br>
+    </summary>
+    <div class="content">
+    <p><textarea rows="3" cols="20" name="usrtxt" wrap="hard">Paste your existing profile here & submit</textarea></p>
+    <input type="submit" value="Submit">
+    </div>
+    <br>
+    </details><br>
 
-<details>  
-  <summary Style="color:rgb(15, 5, 5);"> Click <b><u>here</u></b> if you already have a profile !</p><br>
+  <details>
+  <summary>
+    Click <b><u>here</u></b> to create a new profile. To avoid receiving wrong matches fill your profile accuratley and honestly and Submit!
   </summary>
-<div class="content">
-  <p><textarea rows="3" cols="20" name="usrtxt" wrap="hard">Paste your existing profile here & submit</textarea></p>
-<input type="submit" value="Submit">
-</div>
-<br>
-</details><br>
 
-<details>
- <summary> Click <b><u>here</u></b> to create a new profile. To avoid receiving wrong matches fill your profile accuratley and honestly and Submit!</p>
-</summary>
-
- <p>1. Upload image to display and submit below</P>
-</label>
+  <p>1. Upload image to display and submit below</P>
+  </label>
   <input type="file" id="img" name="img" accept="image/*"><br><br>
   
   <p>2.Exchange Pictures on Request
     <input type="radio" name="Picture request" value="Yes" />Yes
     <input type="radio" name="Picture Request" value="No" />No<br>
-</p>
-    
-<p>3.Please choose your Gender
+  </p>
+      
+  <p>3.Please choose your Gender
 
-<input type="radio" name="Gender" value="male" />Male
-<input type="radio" name="Gender" value="female" />Female<br><br>
-</p>
-<div>
+  <input type="radio" name="Gender" value="male" />Male
+  <input type="radio" name="Gender" value="female" />Female<br><br>
+  </p>
+  <div>
   <label>4.Filled by </label>
   <input type="text" required placeholder=" Relationship to candidate" />
-</div>
+  </div>
 
-<div>
+  <div>
   <label>5.Your Name</label>
   <input type="text" required placeholder="Candidates/for admin only"/>
-</div>
+  </div>
 
-<div>
+  <div>
   <label>6.Marital Status</label>
   <input type="text" required placeholder="Candidates legal Status" />
-</div>
+  </div>
 
-<div>
+  <div>
   <label>7.Your Age</label>
   <input type="number" required placeholder="Candidates Age"/>
-</div>
+  </div>
 
-<div>
+  <div>
   <label>8.Your Height</label>
   <input type="text" required placeholder=" In feet or metric"/>
-</div>
+  </div>
 
   <label>9.Body Type</label>
   <input type="text" required placeholder=" Slim, Medium,Large etc" />
   <br>
 
-<label>10.History of Education,Work or business</label> 
-<input type="text" required placeholder="What candidate doing now" />
-<br><br>
+  <label>10.History of Education,Work or business</label> 
+  <input type="text" required placeholder="What candidate doing now" />
+  <br><br>
 
-<label>11.Your Nationality</label> 
+  <label>11.Your Nationality</label> 
   <input type="text" required placeholder="Candidates Nationality" />
   <br><br>
 
-<p>12.Your Ethnicity
+  <p>12.Your Ethnicity
 
-<input type="radio" name="Ethnicity" value="Pakistani" />Pakistani
-<input type="radio" name="Ethnicity" value="British" />English
-<input type="radio" name="Ethnicity" value="Welsh" />Welsh
-<input type="radio" name="Ethnicity" value="British" />Scottish
-<input type="radio" name="Ethnicity" value="British" />Irish<br><br>
-</p>
+  <input type="radio" name="Ethnicity" value="Pakistani" />Pakistani
+  <input type="radio" name="Ethnicity" value="British" />English
+  <input type="radio" name="Ethnicity" value="Welsh" />Welsh
+  <input type="radio" name="Ethnicity" value="British" />Scottish
+  <input type="radio" name="Ethnicity" value="British" />Irish<br><br>
+  </p>
 
-<p>13.Your Spoken Languages
+  <p>13.Your Spoken Languages
 
-<input type="radio" name="Languages" value="English" />English
-<input type="radio" name="Languages" value="Urdu" />Urdu
-<input type="radio" name="Languages" value="Punjabi" />Punjabi
-<input type="radio" name="Languages" value="All of them" />All of them<br><br>
-</p>
+  <input type="radio" name="Languages" value="English" />English
+  <input type="radio" name="Languages" value="Urdu" />Urdu
+  <input type="radio" name="Languages" value="Punjabi" />Punjabi
+  <input type="radio" name="Languages" value="All of them" />All of them<br><br>
+  </p>
 
-<div>
+  <div>
   <label>14.Qabeela/Tribe or Caste</label>
   <input type="text" required placeholder="Lineage for similarity"/>
 
-</div>
-
-
-<div>
-  <label>15.Parental Origins</label>
-  <input type="text" required placeholder=" In Pakistan"/>
-</div>
-
-<div>
-  <label>16.Current Locaion</label>
-  <input type="text" required placeholder="Which area of London/UK" />
-</div> <br>
-
-
-Only Select that Applies<br><br>
-
-
-<p>17.Islamic Sect
-
-<input type="radio" name="Islamic Sect" value="Islamic Sect" />Sunni
-<input type="radio" name="Islamic Sect" value="Islamic Sect" />Shia
-<input type="radio" name="Islamic Sect" value="Islamic Sect" />Other
-</p> <br><br>
-
-<p>18.Level of Islam
-<input type="radio" name="Level of Islamic Practice" value="Practice" />Strict
-<input type="radio" name="Level of IslamicPractice" value="Practice" />Moderate
-<input type="radio" name="Level of IslamicPractice" value="Practice" />Liberal
-</p><br><br>
-
-<p>19.5 Daily Prayers
-<input type="radio" name="Completed Umrah" value="Umrah" />Fajar
-<input type="radio" name="Completed Umrah" value="Umrah" />Zuhr
-<input type="radio" name="Completed Umrah" value="Umrah" />Asr
-<input type="radio" name="Completed Umrah" value="Umrah" />Maghrib
-<input type="radio" name="Completed Hajj" value="Hajj" />Isha
-<input type="radio" name="Completed Umrah" value="Umrah" /> Tahajjud
-<input type="radio" name="Completed Umrah" value="Umrah" />Optionals 
-</p><br><br>
-
-<p>20.Completed
-<input type="radio" name="Completed Umrah" value="Umrah" />Umrah
-<input type="radio" name="Completed Hajj" value="Hajj" />Hajj 
-<input type="radio" name="Completed other" value="other" />Other</p><br><br>
-
-<p>21.Do you Celebrate:
-
-<input type="radio" name="Completed Umrah" value="Umrah" />Khatum
-<input type="radio" name="Completed Umrah" value="Umrah" />Milad
-
-<input type="radio" name="Completed Umrah" value="Umrah" />Other
-<input type="radio" name="Completed Umrah" value="Umrah" />Don't Mind
-<input type="radio" name="Completed Umrah" value="Umrah" />None
-</p>
-<br><br>
-<p>22.For Males &nbsp;
-<input type="radio" name="Lowering of gaze" value="Lowering of Gaze" />Modesty
-<input type="radio" name="Beard" value="Beard" />Beard 
-<input type="radio" name="Living with family" value="Living with family" />Living with family
-<input type="radio" name="Living with inlaws" value="Living with inlaws" />Separate from family
-</p><br><br>
-
-
-For Females
-<input type="radio" name="Hijab" value="Hijab" />Hijab
-<input type="radio" name="Full Veil" value="Veil" />Full Veil
-<input type="radio" name="Living with family" value="Living with family" />Living with family
-<input type="radio" name="Living with inlaws" value="Living with inlaws" />Separate from family
-<div>
-<br>
-
-Live with In laws after marriage (Females Only)
-<input type="radio" yes="Yes" value="Yes" />Yes
-<input type="radio" No="No" value="No" />No 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-Prefer to Live Separately (Due to privacy)
-  <input type="radio" yes="Yes" value="Yes" />Yes
-<input type="radio" No="No" value="No" />No<br><br>   
-
-Do you have any Children
-<input type="radio" name="Children" value="Children" />Yes
-<input type="radio" name="Children" value="Children" />No
-<input type="radio" name="Children" value="Children" />1
-<input type="radio" name="Children" value="Children" />2
-<input type="radio" name="Children" value="Children" />3+
-<input type="radio" name="Children" value="Children" />None
-<br><br>
-Do you want to have Children after marriage
-<input type="radio" yes="Yes" value="Yes" />Yes
-<input type="radio" No="No" value="No" />No 
-<br><br>
-Do you have any Disabilities
-<input type="radio" name="Disability" value="Disability" /> Yes
-<input type="radio" name="Children" value="Children" />No
-<br><br>
-Would Accept
-<input type="radio" name="Divorcee" value="Divorcee" />Divorcee
-<input type="radio" name="Divorced" value="divorced" />Divorced
-
-<input type="radio" name="Widow" value="Widow" />Widow
-<input type="radio" name="Widower" value="Widower" />Widower
-<input type="radio" name="Accept with Children" value="Accept with Children" />Accept with Children
-<input type="radio" name="Accept with Children" value="Accept with Children" />Without Children
-<br><br>
-Married by
-<input type="radio" name="Asap" value="Asap" />Asap
-<input type="radio" name="6 months" value="6months" />6 months
-<input type="radio" name="1 year" value="1 year" />1 year
-<input type="radio" name="Depends on Rishta" value="Depends on Rishta" />Depends on Rishta
-<br><br>
-Do You
-<input type="radio" name="Smokes" value="Smokes" />Smoke
-<input type="radio" name="Drink" value="Drink" />Drink
-<input type="radio" name="Drugs" value="Drugs" />Drugs
-<input type="radio" name="Drugs" value="Drugs" />Shisha
-<input type="radio" name="None" value="None" />None
-
-<br><br>
-<div>
-<label>Previous Relationships?</label>
-<input type="text"  required placeholder="Have you had any?"/>
-</div>
-
-<div>
-<label>About Me</label>
-<input type="text"  required placeholder="List your Qualities"/>
-</div>
-
-
-<div>
-  <label>My family</label>
-  <input type="text"  required placeholder=" List your Family Members"/>
-</div>
-
-<div>
-  <label>Other Uk Family</label>
-  <input type="text"  required placeholder="Any other family in Uk"/>
-</div>
-<div>
-  <div>
-    <label>Further information</label>
-    <input type="text"  required placeholder=" Add anything to above"/>
   </div>
 
 
-<h4>Partner Requirements / Qualities (include any critical /deal breakers)</h4>
-     
-<label>Marital Status</label>
-  <input type="text"  required placeholder="Status you would accept"/>
-</div>
-<div>
-  <label>Age Range</label>
-  <input type="text"  required placeholder=" Age you would consider"/>
-</div>
-<div>
-  <label>Height Range</label>
-  <input type="text"  required placeholder=" Height you would consider"/>
-</div>
-<div>
-  <label>Build Type</label>
-  <input type="text"  required placeholder=" Build you would consider"/>
-</div>
-<div>
-  <label>Age Range</label>
-  <input type="text"  required placeholder=" Age you would consider"/>
-</div>
-      <div>
-  <label>Nationality</label>
-  <input type="text"  required placeholder="Nationality you would Accept"/>
-</div>
+  <div>
+  <label>15.Parental Origins</label>
+  <input type="text" required placeholder=" In Pakistan"/>
+  </div>
+
+  <div>
+  <label>16.Current Locaion</label>
+  <input type="text" required placeholder="Which area of London/UK" />
+  </div> <br>
 
 
-<div><label>Live With inlaw after marriage</label>
-<input type="radio" yes="Yes" value="Yes" />Yes
-<input type="radio" No="No" value="No" />No
-</div>
-<div>
-<label>Live Seperately after marriage (for privacy)</label>
-<input type="radio" yes="Yes" value="Yes" />Yes
-<input type="radio" No="No" value="No" />No
-</div>
-<label>Any other requirements, specific or otherwise </label> 
-<input type="text" required placeholder="Specify ideal Candidate" />
-<br><br>
-
-<label>Critical Deal Breakers</label> 
-<input type="text" required placeholder="Anything intolerable" />
-<br><br>
-</fieldset>
-<input type="submit" value="Submit"> 
-</div>
-<br>
-
-<style>
-  div {
-    margin-bottom: 10px; }      
-    label {display: inline-block;
-    width: 110px;
-    text-align: left; }
-    .collapsible 
-    
-
-color: white;
-cursor: pointer;
-padding: 18px;
-width: 100%;
-border: none;
-text-align: left;
-outline: none;
-font-size: 15px;
+  Only Select that Applies<br><br>
 
 
+  <p>17.Islamic Sect
 
-<form> action="send_email.php" method="post">
-  <label for="email">qumrankhan@aol.com address:</label>
-  <input type="email" id="email" name="email">
-  <input type="submit" value="Submit">
-</form>
+  <input type="radio" name="Islamic Sect" value="Islamic Sect" />Sunni
+  <input type="radio" name="Islamic Sect" value="Islamic Sect" />Shia
+  <input type="radio" name="Islamic Sect" value="Islamic Sect" />Other
+  </p> <br><br>
+
+  <p>18.Level of Islam
+  <input type="radio" name="Level of Islamic Practice" value="Practice" />Strict
+  <input type="radio" name="Level of IslamicPractice" value="Practice" />Moderate
+  <input type="radio" name="Level of IslamicPractice" value="Practice" />Liberal
+  </p><br><br>
+
+  <p>19.5 Daily Prayers
+  <input type="radio" name="Completed Umrah" value="Umrah" />Fajar
+  <input type="radio" name="Completed Umrah" value="Umrah" />Zuhr
+  <input type="radio" name="Completed Umrah" value="Umrah" />Asr
+  <input type="radio" name="Completed Umrah" value="Umrah" />Maghrib
+  <input type="radio" name="Completed Hajj" value="Hajj" />Isha
+  <input type="radio" name="Completed Umrah" value="Umrah" /> Tahajjud
+  <input type="radio" name="Completed Umrah" value="Umrah" />Optionals 
+  </p><br><br>
+
+  <p>20.Completed
+  <input type="radio" name="Completed Umrah" value="Umrah" />Umrah
+  <input type="radio" name="Completed Hajj" value="Hajj" />Hajj 
+  <input type="radio" name="Completed other" value="other" />Other</p><br><br>
+
+  <p>21.Do you Celebrate:
+
+  <input type="radio" name="Completed Umrah" value="Umrah" />Khatum
+  <input type="radio" name="Completed Umrah" value="Umrah" />Milad
+
+  <input type="radio" name="Completed Umrah" value="Umrah" />Other
+  <input type="radio" name="Completed Umrah" value="Umrah" />Don't Mind
+  <input type="radio" name="Completed Umrah" value="Umrah" />None
+  </p>
+  <br><br>
+  <p>22.For Males &nbsp;
+  <input type="radio" name="Lowering of gaze" value="Lowering of Gaze" />Modesty
+  <input type="radio" name="Beard" value="Beard" />Beard 
+  <input type="radio" name="Living with family" value="Living with family" />Living with family
+  <input type="radio" name="Living with inlaws" value="Living with inlaws" />Separate from family
+  </p><br><br>
+
+
+  For Females
+  <input type="radio" name="Hijab" value="Hijab" />Hijab
+  <input type="radio" name="Full Veil" value="Veil" />Full Veil
+  <input type="radio" name="Living with family" value="Living with family" />Living with family
+  <input type="radio" name="Living with inlaws" value="Living with inlaws" />Separate from family
+  <div>
+  <br>
+
+  Live with In laws after marriage (Females Only)
+  <input type="radio" yes="Yes" value="Yes" />Yes
+  <input type="radio" No="No" value="No" />No 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+  Prefer to Live Separately (Due to privacy)
+    <input type="radio" yes="Yes" value="Yes" />Yes
+  <input type="radio" No="No" value="No" />No<br><br>   
+
+  Do you have any Children
+  <input type="radio" name="Children" value="Children" />Yes
+  <input type="radio" name="Children" value="Children" />No
+  <input type="radio" name="Children" value="Children" />1
+  <input type="radio" name="Children" value="Children" />2
+  <input type="radio" name="Children" value="Children" />3+
+  <input type="radio" name="Children" value="Children" />None
+  <br><br>
+  Do you want to have Children after marriage
+  <input type="radio" yes="Yes" value="Yes" />Yes
+  <input type="radio" No="No" value="No" />No 
+  <br><br>
+  Do you have any Disabilities
+  <input type="radio" name="Disability" value="Disability" /> Yes
+  <input type="radio" name="Children" value="Children" />No
+  <br><br>
+  Would Accept
+  <input type="radio" name="Divorcee" value="Divorcee" />Divorcee
+  <input type="radio" name="Divorced" value="divorced" />Divorced
+
+  <input type="radio" name="Widow" value="Widow" />Widow
+  <input type="radio" name="Widower" value="Widower" />Widower
+  <input type="radio" name="Accept with Children" value="Accept with Children" />Accept with Children
+  <input type="radio" name="Accept with Children" value="Accept with Children" />Without Children
+  <br><br>
+  Married by
+  <input type="radio" name="Asap" value="Asap" />Asap
+  <input type="radio" name="6 months" value="6months" />6 months
+  <input type="radio" name="1 year" value="1 year" />1 year
+  <input type="radio" name="Depends on Rishta" value="Depends on Rishta" />Depends on Rishta
+  <br><br>
+  Do You
+  <input type="radio" name="Smokes" value="Smokes" />Smoke
+  <input type="radio" name="Drink" value="Drink" />Drink
+  <input type="radio" name="Drugs" value="Drugs" />Drugs
+  <input type="radio" name="Drugs" value="Drugs" />Shisha
+  <input type="radio" name="None" value="None" />None
+
+  <br><br>
+  <div>
+  <label>Previous Relationships?</label>
+  <input type="text"  required placeholder="Have you had any?"/>
+  </div>
+
+  <div>
+  <label>About Me</label>
+  <input type="text"  required placeholder="List your Qualities"/>
+  </div>
+
+
+  <div>
+    <label>My family</label>
+    <input type="text"  required placeholder=" List your Family Members"/>
+  </div>
+
+  <div>
+    <label>Other Uk Family</label>
+    <input type="text"  required placeholder="Any other family in Uk"/>
+  </div>
+  <div>
+    <div>
+      <label>Further information</label>
+      <input type="text"  required placeholder=" Add anything to above"/>
+    </div>
+
+
+  <h4>Partner Requirements / Qualities (include any critical /deal breakers)</h4>
+      
+  <label>Marital Status</label>
+    <input type="text"  required placeholder="Status you would accept"/>
+  </div>
+  <div>
+    <label>Age Range</label>
+    <input type="text"  required placeholder=" Age you would consider"/>
+  </div>
+  <div>
+    <label>Height Range</label>
+    <input type="text"  required placeholder=" Height you would consider"/>
+  </div>
+  <div>
+    <label>Build Type</label>
+    <input type="text"  required placeholder=" Build you would consider"/>
+  </div>
+  <div>
+    <label>Age Range</label>
+    <input type="text"  required placeholder=" Age you would consider"/>
+  </div>
+        <div>
+    <label>Nationality</label>
+    <input type="text"  required placeholder="Nationality you would Accept"/>
+  </div>
+
+
+  <div><label>Live With inlaw after marriage</label>
+  <input type="radio" yes="Yes" value="Yes" />Yes
+  <input type="radio" No="No" value="No" />No
+  </div>
+  <div>
+  <label>Live Seperately after marriage (for privacy)</label>
+  <input type="radio" yes="Yes" value="Yes" />Yes
+  <input type="radio" No="No" value="No" />No
+  </div>
+  <label>Any other requirements, specific or otherwise </label> 
+  <input type="text" required placeholder="Specify ideal Candidate" />
+  <br><br>
+
+  <label>Critical Deal Breakers</label> 
+  <input type="text" required placeholder="Anything intolerable" />
+  <br><br>
+  </fieldset>
+  <input type="submit" value="Submit"> 
+  </div>
+  <br>
+
+  <style>
+    div {
+      margin-bottom: 10px; }      
+      label {display: inline-block;
+      width: 110px;
+      text-align: left; }
+      .collapsible 
+      
+
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+
+
+
+  <form> action="send_email.php" method="post">
+    <label for="email">qumrankhan@aol.com address:</label>
+    <input type="email" id="email" name="email">
+    <input type="submit" value="Submit">
+  </form>
 
 
        
-  </body>
-</html>
+    </body>
+  </html>
