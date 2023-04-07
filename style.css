@@ -1,5 +1,45 @@
+
 body {
-			background-color: #df8a8a;
-		}
-	
-	
+	background-color: rgb(240, 239, 239);
+}
+
+h1 {
+	text-align: left;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	padding: 30px;
+	border-bottom: 2px solid gray;
+	text-transform: uppercase;
+	background: linear-gradient(90deg, pink 30%, white);
+}
+
+h2 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+ul {
+	list-style: none;
+	padding: 30px;
+	text-align: left;
+}
+p {
+	text-align: center;
+}
+
+hr {
+	color: black;
+	height: 5px;
+}
+
+span {
+	text-align: left;
+}
+
+.wrapper {
+	list-style-type: none;
+}
+
+.header-items {
+	float: right
+}
+
