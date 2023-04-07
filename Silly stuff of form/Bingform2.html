@@ -1,0 +1,464 @@
+<html>
+<head>
+<title>Marriage Candidate Form</title>
+<style>
+/* Style the form container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Style the form header */
+.header {
+  text-align: center;
+}
+
+/* Style the form title */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333333;
+}
+
+/* Style the form subtitle */
+.subtitle {
+  font-size: 18px;
+  font-style: italic;
+  color: #666666;
+}
+
+/* Style the form elements */
+input[type=text], input[type=number], input[type=file], input[type=radio], input[type=checkbox], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style the form labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Style the form buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Style the submit button */
+.submit-button {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Style the reset button */
+.reset-button {
+  background-color: #AAAAAA;
+  color: white;
+}
+
+/* Add some space between the buttons */
+.button-group {
+  display: flex;
+}
+
+.button-group button {
+  flex: 1;
+}
+
+.button-group button:not(:last-child) {
+   margin-right: 10px; 
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1 class="header">
+<span class="title">Marriage Candidate Form</span><br>
+<span class="subtitle">Please fill in your details and upload your photo.</span>
+</h1>
+<form action="submit.php" method="post" enctype="multipart/form-data">
+<label for="gender">Select Candidates Gender:</label>
+<select id="gender" name="gender" required>
+  <option value="">Select</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+
+<label for="filled_by">Form Filled by(for Admin):</label>
+<input type="text" id="filled_by" name="filled_by" required>
+
+<label for="candidate_name">Candidate name:</label>
+<input type="text" id="candidate_name" name="candidate_name" required>
+
+<label for="marital_status">Marital status:</label>
+<select id="marital_status" name="marital_status" required>
+<option value="">Select</option>
+<option value="single">Single</option>
+<option value="divorced">Divorced</option>
+<option value="No Ruksati">Short marriage / Divorced, No Ruksati</option>
+<option value="widowed">Widowed</option>
+<option value="Khula">Khula (Separation by way of consent between the parties)</option>
+<option value="Faskh">Faskh-e-Nikah (Dissolution of Marriage)</option>
+<option value="Talaq">Talaq (Granting of Divorce by the Husband)</option>
+<option value="Tafweedh-e-Talaq">Tafweedh-e-Talaq (When the power of Talaq is transferred to the Wife)</option>
+<option value="other">Other, can explain later</option>
+<!--the below code needs to be highlighted in the options fr explanations]-->
+
+<a href="https://www.familylaw.co.uk/news_and_comment/talaq-khula-faskh-tafweedh-the-different-methods-of-islamic-separation-part-1">Explanation</a>
+
+</select>
+
+<label for="age">Select Current Age:</label>
+
+<input type="number" id="age" name="age" min="18" max="99" required>
+
+
+<!--The above needs to have options for height for the person to choose from -->
+<label for="height">Height:</label>
+<select id="height" name="height">
+  <option value="">Select</option>
+  <option value="4'11&quot;">4'11&quot;</option>
+  <option value="5'0&quot;">5'0&quot;</option>
+  <option value="5'1&quot;">5'1&quot;</option>
+  <option value="5'2&quot;">5'2&quot;</option>
+  <option value="5'3&quot;">5'3&quot;</option>
+  <option value="5'4&quot;">5'4&quot;</option>
+  <option value="5'5&quot;">5'5&quot;</option>
+  <option value="5'6&quot;">5'6&quot;</option>
+  <option value="5'7&quot;">5'7&quot;</option>
+  <option value="5'8&quot;">5'8&quot;</option>
+  <option value="5'9&quot;">5'9&quot;</option>
+  <option value="5'10&quot;">5'10&quot;</option>
+  <option value="5'11&quot;">5'11&quot;</option>
+  <option value="6'0&quot;">6'0&quot;</option>
+  <option value="6'1&quot;">6'1&quot;</option>
+  <option value="6'2&quot;">6'2&quot;</option>
+  <option value="6'3&quot;">6'3&quot;</option>
+  <option value="6'4&quot;">6'4&quot;</option>
+  <option value="6'5&quot;">6'5&quot;</option>
+  <option value="6'6&quot;">6'6&quot;</option>
+  <option value="6'7&quot;">6'7&quot;</option>
+  <option value="6'8&quot;">6'8&quot;</option>
+  <option value="6'9&quot;">6'9&quot;</option>
+  <option value="6'10&quot;">6'10&quot;</option>
+  <option value="6'11&quot;">6'11&quot;</option>
+  <option value="6'12&quot;">6'12&quot;</option>
+</select>
+
+<label for="body_type">Body type:</label>
+<select id="body_type" name="body_type">
+<option value="">Select</option>
+<option value="slim">Slim</option>
+<option value="average">Average</option>
+<option value="athletic">Athletic</option>
+<option value="curvy">Curvy</option>
+<option value="plus size">Plus size</option>
+<option value="plus size">Other</option>
+</select>
+
+<label for="education_history">History of Education / Work or Business since school:</label>
+<textarea id="education_history" name="education_history" rows="4" cols="50"></textarea>
+
+<label for="nationality">Current Nationality:</label>
+<input type="text" id="nationality" name="nationality">
+
+<label for="ethnicity">Ethinicity:</label>
+<input type="text" id="ethnicity" name="ethnicity">
+
+
+<label for="spoken_languages">Spoken languages:</label>
+<input type="text" id="spoken_languages" name="spoken_languages">
+
+<label for="qabeela_tribe_caste">Qabeela/Tribe or Caste:</label>
+<input type="text" id="qabeela_tribe_caste" name="qabeela_tribe_caste">
+
+<label for="parental_origins">Parental origins:</label>
+<input type="text" id="parental_origins" name="parental_origins">
+
+<label for="current_location">Current location:</label>
+<input type="text" id="current_location" name="current_location">
+
+<label for="islamic_sect">Islamic sect:</label>
+<select id="islamic_sect" name="islamic_sect">
+<option value="">Select</option>
+<option value="sunni">Sunni</option>
+<option value="shia">Shia</option>
+<option value="sufi">Sufi</option>
+<option value="salafi">Salafi</option>
+<option value="other">Other</option>
+</select>
+
+<label for="level_of_islam">Level of Islam:</label>
+<select id="level_of_islam" name="level_of_islam">
+<option value="">Select</option>
+<option value="practicing">Practicing</option>
+<option value="moderate">Moderate</option>
+<option value="liberal">Liberal</option>
+<option value="non-practicing">Non-practicing</option>
+</select>
+
+<label for="daily_prayers">Daily prayers:</label>
+<select id="daily_prayers" name="daily_prayers">
+    <option value="">Select</option>
+    <option value="always">Always</option>
+    <option value="sometimes">Sometimes</option>
+    <option value="rarely">Rarely</option>
+    <option value="never">Never</option>
+    </select>
+    
+    <label for="completed_umrah">Completed Umrah:</label> 
+    <input type="radio" id="yes" name="completed_umrah" value="yes"> <label for="yes">Yes</label>
+    <input type="radio" id="no" name="completed_umrah" value="no"> <label for="no">No</label>
+    <label for="completed_umrah_hajj">Completed Hajj:</label>
+    <input type="radio" id="yes" name="completed_hajj" value="yes">
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" name="completed_hajj" value="no">
+    <label for="no">No</label>
+<!--put all radio buttons on same line above and below-->
+
+    
+    <label for="other_religious_activities">Other religious activities:</label>
+    <input type="text" id="other_religious_activities" name="other_religious_activities">
+    
+    <label for="celebrate_khatum_milad">Celebrate Khatum Milad:</label>
+    <input type="radio" id="yes" name="celebrate_khatum_milad" value="yes">
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" name="celebrate_khatum_milad" value="no">
+    <label for="no">No</label>
+    
+    <label for="other_religious_views">Other religious views:</label>
+    <input type="text" id="other_religious_views" name="other_religious_views">
+
+    <label for="modesty">For Women:</label>
+    <select id="modesty" name="modesty">
+    <option value="select">Select</option>
+    <option value="hijab">Hijab</option>
+    <option value="niqab">Niqab</option>
+    <option value="burqa">Burqa</option> 
+    <option value="Mixing">No Free Mixing</option>
+    <option value="none">None</option>
+    </select>
+    
+    <label for="beard">For Men:</label>
+    <select id="beard" name="beard">
+    <option value="">Select</option>
+    <option value="full">Beard Full</option>
+    <option value="trimmed">Beared Trimmed</option>
+    <option value="shaved">Beared Shaved</option>
+    <option value="Gaze">Lowering of the Gaze</option>
+    <option value="Mixing">No Free Mixing</option>
+    <option value="none">None</option>
+    </select>
+    <!--Makw all radio buttons on same level-->
+    <label for="living_with_parents">Living with parents:</label>
+    <input type="radio" id="yes" name="living_with_parents" value="yes">
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" name="living_with_parents" value="no">
+    <label for="no">No</label>
+    
+    <label for="living_independently">Living independently:</label>
+    <input type="radio" id="yes" name="living_independently" value="yes">
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" name="living_independently" value="no">
+    <label for="no">No</label>
+    
+    <label for="live_with_in_laws">Live with in-laws after marriage:</label>
+    <select id="live_with_in_laws" name="live_with_in_laws">
+        <option value="">Select</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        <option value="privately">Privately</option>
+        </select>
+        
+        <label for="have_children">Have children:</label>
+        <input type="radio" id="yes" name="have_children" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="have_children" value="no">
+        <label for="no">No</label>
+        
+        <label for="want_children">Want children after marriage:</label>
+        <input type="radio" id="yes" name="want_children" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="want_children" value="no">
+        <label for="no">No</label>
+        
+        <label for="have_disabilities">Have disabilities:</label>
+        <input type="radio" id="yes" name="have_disabilities" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="have_disabilities" value="no">
+        <label for="no">No</label>
+        
+        <label for="accept_divorcee_widow_widower_married">Accept divorcee/widow/widower/married:</label>
+        <input type="radio" id="yes" name="accept_divorcee_widow_widower_married" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="accept_divorcee_widow_widower_married" value="no">
+        <label for="no">No</label>
+        
+        <label for="married_by">Married by:</label>
+        <select id="married_by" name="married_by">
+        <option value="">Select</option>
+        <option value="asap">As soon as possible</option>
+        <option value="6_months">6 months</option>
+        <option value="1_year">1 year</option>
+        <option value="depends_on_rishta">Depends on rishta</option>
+        </select>
+        
+        <!--make below checkboxex on same level-->
+        <label for="smoke_drink_drugs_shisha">Choose if you:</label>
+        <input type="checkbox" id="smoke" name="smoke_drink_drugs_shisha" value="smoke">
+        <label for="smoke">Smoke</label>
+        <input type="checkbox" id="drink" name="smoke_drink_drugs_shisha" value="drink">
+        <label for="drink">Drink</label>
+        <input type="checkbox" id="drugs" name="smoke_drink_drugs_shisha" value="drugs">
+        <label for="drugs">Drugs</label>
+        <input type="checkbox" id="shisha" name="smoke_drink_drugs_shisha" value="shisha">
+        <label for="shisha">Shisha</label>
+        <input type="checkbox" id="none" name="smoke_drink_drugs_shisha" value="none">
+        <label for="none">None</label>
+        
+        <label for="previous_relationships">Previous relationships:</label>
+        <input type="radio" id="yes" name="previous_relationships" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="previous_relationships" value="no">
+        <label for="no">No</label>
+        
+        <label for="about_me">About me:</label>
+        <textarea id="about_me" name="about_me" rows="4" cols="50"></textarea>
+        
+        <label for="people_in_my_family">People in my family:</label>
+        <textarea id="people_in_my_family" name="people_in_my_family" rows="4" cols="50"></textarea>
+        
+        <label for="other_uk_family">Other UK family:</label>
+        <textarea id="other_uk_family" name="other_uk_family" rows="4" cols="50"></textarea>
+
+        <label for="further_information">Any other information not covered or disclose below:</label>
+        <textarea id="further_information" name="further_information" rows="4" cols="50"></textarea>
+        
+        <label for="partner_requirements_qualities">Partner Requirements/Qualities (include any critical/deal breakers):</label>
+        <textarea id="partner_requirements_qualities" name="partner_requirements_qualities" rows="4" cols="50"></textarea>
+        
+        <label for="partner_marital_status">Acceptable Partner Marital Status:</label>
+        <select id="partner_marital_status" name="partner_marital_status">
+          <option value="">Select</option>
+          <option value="single">Single</option>
+          <option value="divorced">Divorced</option>
+          <option value="No Ruksati">Short marriage / Divorced, No Ruksati</option>
+          <option value="widowed">Widowed</option>
+          <option value="Khula">Khula (Separation by way of consent between the parties)</option>
+          <option value="Faskh">Faskh-e-Nikah (Dissolution of Marriage)</option>
+          <option value="Talaq">Talaq (Granting of Divorce by the Husband)</option>
+          <option value="Tafweedh-e-Talaq">Tafweedh-e-Talaq (When the power of Talaq is transferred to the Wife)</option>
+          <option value="other">Other, can explain later</option>
+        </select>
+        
+        <label for="partner_age_range">Partner age range:</label>
+        <select name="age" id="age">
+          <option value="">Select</option>
+          <option value="18-23">18-23</option>
+          <option value="24-28">24-28</option>
+          <option value="29-33">29-33</option>
+          <option value="34-39">34-39</option>
+          <option value="40-44">40-44</option>
+          <option value="45-49">45-49</option>
+          <option value="50-54">50-54</option>
+          <option value="55-59">55-59</option>
+          <option value="60-64">60-64</option>
+          <option value="65-69">65-69</option>
+          <option value="70-74">70-74</option>
+          <option value="75-79">75-79</option>
+          <option value="80-84">80-84</option>
+          <option value="85+">85+</option>
+        </select>  
+        
+        
+        <label for="height">Partner Height Range:</label>
+<select id="height" name="height">
+  <option value="">Select</option>
+  <option value="4'11&quot;">4'11&quot;</option>
+  <option value="5'0&quot;">5'0&quot;</option>
+  <option value="5'1&quot;">5'1&quot;</option>
+  <option value="5'2&quot;">5'2&quot;</option>
+  <option value="5'3&quot;">5'3&quot;</option>
+  <option value="5'4&quot;">5'4&quot;</option>
+  <option value="5'5&quot;">5'5&quot;</option>
+  <option value="5'6&quot;">5'6&quot;</option>
+  <option value="5'7&quot;">5'7&quot;</option>
+  <option value="5'8&quot;">5'8&quot;</option>
+  <option value="5'9&quot;">5'9&quot;</option>
+  <option value="5'10&quot;">5'10&quot;</option>
+  <option value="5'11&quot;">5'11&quot;</option>
+  <option value="6'0&quot;">6'0&quot;</option>
+  <option value="6'1&quot;">6'1&quot;</option>
+  <option value="6'2&quot;">6'2&quot;</option>
+  <option value="6'3&quot;">6'3&quot;</option>
+  <option value="6'4&quot;">6'4&quot;</option>
+  <option value="6'5&quot;">6'5&quot;</option>
+  <option value="6'6&quot;">6'6&quot;</option>
+  <option value="6'7&quot;">6'7&quot;</option>
+  <option value="6'8&quot;">6'8&quot;</option>
+  <option value="6'9&quot;">6'9&quot;</option>
+  <option value="6'10&quot;">6'10&quot;</option>
+  <option value="6'11&quot;">6'11&quot;</option>
+  <option value="6'12&quot;">6'12&quot;</option>
+</select>
+
+
+
+        <label for="partner_build_type">Partner Build Type:</label>
+        <select id="partner_build_type" name="partner_build_type">
+        <option value="">Select</option>
+        <option value="slim">Slim</option>
+        <option value="average">Average</option>
+        <option value="athletic">Athletic</option>
+        <option value="curvy">Curvy</option>
+        <option value="plus size">Plus size</option>
+        <option value="does not matter">Does Not Matter</option>
+        </select>
+        
+        <label for="partner_nationality">Acceptable Partner Nationality:</label>
+        <select id="partner_nationality" name="nationality">
+        <option value="plus size">Select</option>
+        <option value="British">British Only</option>
+        <option value="British/pakistani">British/Pakistani</option>
+        <option value="Pakistani">Pakistani</option>
+        <option value="Indefinate right to stay">Indefinate Right to stay</option>
+
+
+      </select>
+        <label for="partner_live_with_in_laws">Partner live with in-laws after marriage:</label>
+        <select id="partner_live_with_in_laws" name="partner_live_with_in_laws">
+        <option value="">Select</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        <option value="privacy">No for Privacy</option>
+        <option value="plus size">Initally</option>
+        <option value="plus size">To be discussed</option>
+        <option value="plus size">Mutual agreement</option>
+        <option value="plus size">N/A</option>
+        </select>
+        
+        <label for="partner_other_requirements">Partner Any other requirements not mentioned:</label>
+        <textarea id="partner_other_requirements" name="partner_other_requirements" rows="4" cols="50"></textarea>
+
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" name="photo" accept=".jpg,.png,.gif" required>
+        
+        <div class="button-group">
+        <button type="submit" class="submit-button">Submit</button>
+        <button type="reset" class="reset-button">Reset</button>
+        </div>
+        </form>
+        </div>
+        </body>
+        </html>
+        ```
