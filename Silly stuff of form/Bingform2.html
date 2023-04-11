@@ -171,17 +171,47 @@ button {
 
 </select>
 
-<label for="age" required>Select Current Age:</label>
+<label for="age" required>Select Candidate Current Age:</label>
 
 <input type="number" id="age" name="age" required placeholder= "Select you age"    min="18" max="99">
 
 
 
 
-<label for="height" required>Height:</label>
-<input type="number" id="height" name="height" required placeholder="Select your height in feet and inches"  min="4" max="7" step="0.1">
+<label for="height">Candidate Height:</label>
+<select id="height" name="height">
+  <option value="">Select</option>
+  <option value="Less than 4'11&quot;">Less than 4'11 (150cm)&quot;</option>
+  <option value="150">4'11&quot; (150cm)</option>
+<option value="152.4">5'0&quot; (152.4cm)</option>
+<option value="154.9">5'1&quot; (154.9cm)</option>
+<option value="157.5">5'2&quot; (157.5cm)</option>
+<option value="160">5'3&quot; (160cm)</option>
+<option value="162.6">5'4&quot; (162.6cm)</option>
+<option value="165.1">5'5&quot; (165.1cm)</option>
+<option value="167.6">5'6&quot; (167.6cm)</option>
+<option value="170.2">5'7&quot; (170.2cm)</option>
+<option value="172.7">5'8&quot; (172.7cm)</option>
+<option value="175.3">5'9&quot; (175.3cm)</option>
+<option value="177.8">5'10&quot; (177.8cm)</option>
+<option value="180.3">5'11&quot; (180.3cm)</option>
+<option value="182.9">6'0&quot; (182.9cm)</option>
+<option value="185.4">6'1&quot; (185.4cm)</option>
+<option value="188">6'2&quot; (188cm)</option>
+<option value="190.5">6'3&quot; (190.5cm)</option>
+<option value="193">6'4&quot; (193cm)</option>
+<option value="195.6">6'5&quot; (195.6cm)</option>
+<option value="198.1">6'6&quot; (198.1cm)</option>
+<option value="200.7">6'7&quot; (200.7cm)</option>
+<option value="203.2">6'8&quot; (203.2cm)</option>
+<option value="205.7">6'9&quot; (205.7cm)</option>
+<option value="208.3">6'10&quot; (208.3cm)</option>
+<option value="210.8">6'11&quot; (210.8cm)</option>
+<option value="213.4">6'12&quot; (213.4cm)</option>
+<option value="7 &quot;">More than 7' (213.4cm)'&quot;</option>
+</select>
 
-<label for="body_type" required>Body Type:</label>
+<label for="body_type" required>Candidates Body Type:</label>
 <select id="body_type" name="body_type" multiple>
 <option value="">To select multiple options, you need to hold down the control (ctrl) button for windows or the command button for Mac</option>
 <option value="slim">Slim</option>
@@ -427,8 +457,8 @@ State any others below:
         <input type="radio" id="1 year" name="1 year" value="1 year">
       
         
-        <label for="rishta depend">Rishta Depended:</label>
-        <input type="radio" id="rishta dependent" name="rishta dependent" value="rishta dependent">
+        <label for="Mutually Agreeable">Mutually Agreeable:</label>
+        <input type="radio" id="Mutually Agreeable" name="Mutually Agreeable" value="Mutually Agreeable">
        
 
         <label for="All of the before">All of the before:</label>
@@ -466,28 +496,27 @@ State any others below:
         <label for="people_in_my_family">About my family:</label>
         <textarea id="people_in_my_family" name="people_in_my_family" rows="2" cols="50"></textarea>
         
-        <label for="other_uk_family">Other UK family:</label>
-        <textarea id="other_uk_family" name="other_uk_family" rows="2" cols="50"></textarea>
+        <label for="Do you have any other UK family">Do you have any other UK family:</label>
+        <textarea id="Do you have any other UK family" name="Do you have any other UK family" rows="2" cols="50"></textarea>
 
-        <label for="further_information">State any information not covered or disclosed from above:</label>
-        <textarea id="further_information" name="further_information" rows="2" cols="50"></textarea>
+    
         
         <label for="partner_requirements_qualities">Partner Requirements/Qualities:</label>
         <textarea id="partner_requirements_qualities" name="partner_requirements_qualities" rows="2" cols="50"></textarea>
         
         <label for="partner_marital_status">Acceptable Partner Marital Status:</label>
-        <select id="partner_marital_status" name="partner_marital_status">
-          <option value="">Select</option>
-          <option value="single">Single</option>
-          <option value="divorced">Divorced</option>
-          <option value="No Ruksati">Short marriage / Divorced, No Ruksati</option>
-          <option value="widowed">Widowed</option>
-          <option value="Khula">Khula (Separation by way of consent between the parties)</option>
-          <option value="Faskh">Faskh-e-Nikah (Dissolution of Marriage)</option>
-          <option value="Talaq">Talaq (Granting of Divorce by the Husband)</option>
-          <option value="Tafweedh-e-Talaq">Tafweedh-e-Talaq (When the power of Talaq is transferred to the Wife)</option>
-          <option value="other">Other, explanation in Partner information not covered or disclosed <section></section></option>
-        </select>
+              
+        <label for="marital_status">Marital Status:</label><br>
+        <input type="checkbox" name="marital_status[]" value="single">Single<br>
+        <input type="checkbox" name="marital_status[]" value="divorced">Divorced<br>
+        <input type="checkbox" name="marital_status[]" value="No Ruksati">Short marriage / Divorced, No Ruksati<br>
+        <input type="checkbox" name="marital_status[]" value="widowed">Widowed<br>
+        <input type="checkbox" name="marital_status[]" value="Khula">Khula (Separation by way of consent between the parties)<br>
+        <input type="checkbox" name="marital_status[]" value="Faskh">Faskh-e-Nikah (Dissolution of Marriage)<br>
+        <input type="checkbox" name="marital_status[]" value="Talaq">Talaq (Granting of Divorce by the Husband)<br>
+        <input type="checkbox" name="marital_status[]" value="Tafweedh-e-Talaq">Tafweedh-e-Talaq (When the power of Talaq is transferred to the Wife)<br>
+        <input type="checkbox" name="marital_status[]" value="other">Other, explanation in Partner information not covered or disclosed <section></section><br>
+        
         
         <label for="partner_age_range">Partner age range:</label>
         <select name="age" id="age">
@@ -510,38 +539,74 @@ State any others below:
         </select>  
         
         
-        <label for="height">Partner Height Range:</label>
-<select id="height" name="height">
-  <option value="">Select</option>
-  <option value="Less than 4'11&quot;">Less than 4'11&quot;</option>
-  <option value="4'11&quot;">4'11&quot;</option>
-  <option value="5'0&quot;">5'0&quot;</option>
-  <option value="5'1&quot;">5'1&quot;</option>
-  <option value="5'2&quot;">5'2&quot;</option>
-  <option value="5'3&quot;">5'3&quot;</option>
-  <option value="5'4&quot;">5'4&quot;</option>
-  <option value="5'5&quot;">5'5&quot;</option>
-  <option value="5'6&quot;">5'6&quot;</option>
-  <option value="5'7&quot;">5'7&quot;</option>
-  <option value="5'8&quot;">5'8&quot;</option>
-  <option value="5'9&quot;">5'9&quot;</option>
-  <option value="5'10&quot;">5'10&quot;</option>
-  <option value="5'11&quot;">5'11&quot;</option>
-  <option value="6'0&quot;">6'0&quot;</option>
-  <option value="6'1&quot;">6'1&quot;</option>
-  <option value="6'2&quot;">6'2&quot;</option>
-  <option value="6'3&quot;">6'3&quot;</option>
-  <option value="6'4&quot;">6'4&quot;</option>
-  <option value="6'5&quot;">6'5&quot;</option>
-  <option value="6'6&quot;">6'6&quot;</option>
-  <option value="6'7&quot;">6'7&quot;</option>
-  <option value="6'8&quot;">6'8&quot;</option>
-  <option value="6'9&quot;">6'9&quot;</option>
-  <option value="6'10&quot;">6'10&quot;</option>
-  <option value="6'11&quot;">6'11&quot;</option>
-  <option value="6'12&quot;">6'12&quot;</option>
-  <option value="6'12&quot;">More than 7'&quot;</option>
-</select>
+        <label for="Maximum Height">Partner Minimum Height:</label>
+        <select id="Maxium Height" name="Maxium Height">
+          <option value="">Select</option>
+          <option value="Less than 4'11&quot;">Less than 4'11 (150cm)&quot;</option>
+          <option value="150">4'11&quot; (150cm)</option>
+        <option value="152.4">5'0&quot; (152.4cm)</option>
+        <option value="154.9">5'1&quot; (154.9cm)</option>
+        <option value="157.5">5'2&quot; (157.5cm)</option>
+        <option value="160">5'3&quot; (160cm)</option>
+        <option value="162.6">5'4&quot; (162.6cm)</option>
+        <option value="165.1">5'5&quot; (165.1cm)</option>
+        <option value="167.6">5'6&quot; (167.6cm)</option>
+        <option value="170.2">5'7&quot; (170.2cm)</option>
+        <option value="172.7">5'8&quot; (172.7cm)</option>
+        <option value="175.3">5'9&quot; (175.3cm)</option>
+        <option value="177.8">5'10&quot; (177.8cm)</option>
+        <option value="180.3">5'11&quot; (180.3cm)</option>
+        <option value="182.9">6'0&quot; (182.9cm)</option>
+        <option value="185.4">6'1&quot; (185.4cm)</option>
+        <option value="188">6'2&quot; (188cm)</option>
+        <option value="190.5">6'3&quot; (190.5cm)</option>
+        <option value="193">6'4&quot; (193cm)</option>
+        <option value="195.6">6'5&quot; (195.6cm)</option>
+        <option value="198.1">6'6&quot; (198.1cm)</option>
+        <option value="200.7">6'7&quot; (200.7cm)</option>
+        <option value="203.2">6'8&quot; (203.2cm)</option>
+        <option value="205.7">6'9&quot; (205.7cm)</option>
+        <option value="208.3">6'10&quot; (208.3cm)</option>
+        <option value="210.8">6'11&quot; (210.8cm)</option>
+        <option value="213.4">6'12&quot; (213.4cm)</option>
+        <option value="7 &quot;">More than 7' (213.4cm)'&quot;</option>
+        </select>
+
+	<label for="Maximum Height">Partner Maximum Height:</label>
+        <select id="Maxium Height" name="Maxium Height">
+          <option value="">Select</option>
+          <option value="Less than 4'11&quot;">Less than 4'11 (150cm)&quot;</option>
+          <option value="150">4'11&quot; (150cm)</option>
+        <option value="152.4">5'0&quot; (152.4cm)</option>
+        <option value="154.9">5'1&quot; (154.9cm)</option>
+        <option value="157.5">5'2&quot; (157.5cm)</option>
+        <option value="160">5'3&quot; (160cm)</option>
+        <option value="162.6">5'4&quot; (162.6cm)</option>
+        <option value="165.1">5'5&quot; (165.1cm)</option>
+        <option value="167.6">5'6&quot; (167.6cm)</option>
+        <option value="170.2">5'7&quot; (170.2cm)</option>
+        <option value="172.7">5'8&quot; (172.7cm)</option>
+        <option value="175.3">5'9&quot; (175.3cm)</option>
+        <option value="177.8">5'10&quot; (177.8cm)</option>
+        <option value="180.3">5'11&quot; (180.3cm)</option>
+        <option value="182.9">6'0&quot; (182.9cm)</option>
+        <option value="185.4">6'1&quot; (185.4cm)</option>
+        <option value="188">6'2&quot; (188cm)</option>
+        <option value="190.5">6'3&quot; (190.5cm)</option>
+        <option value="193">6'4&quot; (193cm)</option>
+        <option value="195.6">6'5&quot; (195.6cm)</option>
+        <option value="198.1">6'6&quot; (198.1cm)</option>
+        <option value="200.7">6'7&quot; (200.7cm)</option>
+        <option value="203.2">6'8&quot; (203.2cm)</option>
+        <option value="205.7">6'9&quot; (205.7cm)</option>
+        <option value="208.3">6'10&quot; (208.3cm)</option>
+        <option value="210.8">6'11&quot; (210.8cm)</option>
+        <option value="213.4">6'12&quot; (213.4cm)</option>
+        <option value="7 &quot;">More than 7' (213.4cm)'&quot;</option>
+        </select>
+
+
+
 
 
 
@@ -549,45 +614,57 @@ State any others below:
 
 
         <label for="partner_build_type">Partner Build Type:</label>
-        <select id="partner_build_type" name="partner_build_type">
-          <option value="">Select</option>
-          <option value="slim">Slim</option>
-          <option value="average">Average</option>
-          <option value="athletic">Athletic</option>
-          <option value="curvy">Curvy</option>
-          <option value="plus size">Plus size</option>
-          <option value="Other">Other</option>
-          <option value="Ectomorph">Ectomorph</option>
-          <option value="Mesomorph">Mesomorph</option>
-          <option value="Endomorph">Endomorph</option>
-          <option value="Apple">Apple</option>
-          <option value="Pear">Pear</option>
-          <option value="Hour Glass">Hourglass</option>
-          <option value="Don't want say">Don't want say</option>
-          <option value="Doesn't Matter">Doesn't Matter</option>
+        <br>    
+        <input type="checkbox" id="slim" name="body_type[]" value="slim">
+          <label for="slim">Slim</label><br>
+          <input type="checkbox" id="average" name="body_type[]" value="average">
+          <label for="average">Average</label><br>
+          <input type="checkbox" id="athletic" name="body_type[]" value="athletic">
+          <label for="athletic">Athletic</label><br>
+          <input type="checkbox" id="curvy" name="body_type[]" value="curvy">
+          <label for="curvy">Curvy</label><br>
+          <input type="checkbox" id="plus_size" name="body_type[]" value="plus size">
+          <label for="plus_size">Plus size</label><br>
+          <input type="checkbox" id="ectomorph" name="body_type[]" value="Ectomorph">
+          <label for="ectomorph">Ectomorph (A lean and fast-metabolizing body)</label><br>
+          <input type="checkbox" id="mesomorph" name="body_type[]" value="Mesomorph">
+          <label for="mesomorph">Mesomorph (A body type with a natural tendency for muscle development)</label><br>
+          <input type="checkbox" id="endomorph" name="body_type[]" value="Endomorph">
+          <label for="endomorph">Endomorph (A body type with a tendency to store fat easily and a lower metabolic rate.)</label><br>
+          <input type="checkbox" id="apple" name="body_shape[]" value="Apple">
+          <label for="apple">Apple</label><br>
+          <input type="checkbox" id="pear" name="body_shape[]" value="Pear">
+          <label for="pear">Pear</label><br>
+          <input type="checkbox" id="hourglass" name="body_shape[]" value="Hour Glass">
+          <label for="hourglass">Hourglass</label><br>
+          <input type="checkbox" id="dont_want_say" name="body_type[]" value="Don't want say">
+          <label for="dont_want_say">Don't want to say</label><br>
+          <input type="checkbox" id="doesnt_matter" name="body_type[]" value="Doesn't Matter">
+          <label for="doesnt_matter">Doesn't Matter</label><br>
+          <input type="checkbox" id="other" name="body_type[]" value="Other">
+          <label for="other">Other (explain in State any information not covered or disclosed section)</label><br>
+
         </select>
         
-        <label for="partner_nationality">Acceptable Partner Nationality:</label>
-        <select id="partner_nationality" name="nationality">
-        <option value="plus size">Select</option>
-        <option value="British">British Only</option>
-        <option value="British/pakistani">British/Pakistani(Dual National)</option>
-        <option value="Pakistani">Pakistani</option>
-        <option value="Indefinate right to stay">Indefinate Right to stay</option>
+        <label for="partner_nationality">Acceptable Partner Nationality:</label> British
+        <input type="checkbox" id="doesnt_matter" name="body_type[]" value="Doesn't Matter"> Tick box 
+        <Br> 
+        Other State below or N/A        
+        <textarea id="further_information" name="further_information" rows="2" cols="10"></textarea>
+      
 
 
       </select>
         <label for="partner_live_with_in_laws">Partner live with in-laws after marriage:</label>
-        <select id="partner_live_with_in_laws" name="partner_live_with_in_laws">
-        <option value="">Select</option>
-        <option value="yes">Yes</option>
-        <option value="no">No</option>
-        <option value="privacy">No due to Privacy</option>
-        <option value="plus size">Initally</option>
-        <option value="Live independently">Live independently</option>
-        <option value="to be discussed">To be discussed</option>
-        <option value="mutual agreement">Mutual agreement</option>
-        <option value="N/A">N/A</option>
+        <br>
+        
+<input type="checkbox" name="question1[]" value="no">No<br>
+<input type="checkbox" name="question1[]" value="privacy">No due to Privacy<br>
+<input type="checkbox" name="question1[]" value="plus size">Initally<br>
+<input type="checkbox" name="question1[]" value="Live independently">Live independently<br>
+<input type="checkbox" name="question1[]" value="to be discussed">To be discussed<br>
+<input type="checkbox" name="question1[]" value="mutual agreement">Mutual agreement<br>
+<input type="checkbox" name="question1[]" value="N/A">N/A<br>
         </select>
         
         <label for="partner_other_requirements">Partner information not covered or disclosed (include any critical/deal breakers):</label>
