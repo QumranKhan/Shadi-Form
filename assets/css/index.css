@@ -107,3 +107,17 @@
   
   }
   
+  /*Style the navbar*/
+  .topnav {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:#cccccc;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+  }
+
+  /*Style the links inside the navbar*/
+  .topnav a {
+    text-align: center;
+
+  }
+  
