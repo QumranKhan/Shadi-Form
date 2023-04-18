@@ -1,52 +1,39 @@
 <html>
-<head>
-<title>Marriage Candidate Form</title>
+  <head>
+    <title>Marriage Candidate Form</title>
 <!---Link to CSS Styling-->
-<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"-->
-Link to Bootstrap
 <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
 </head>
 
 <body>
-
-<!---Navbar-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./profile.html">Profiles</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="./contact.html">Contact Us</a>
-        </li>
-      </ul>
-    </div>
+  
+  <!---Navbar-->
+  <div class="topnav">
+    <a class="active" href="./index.html">Home</a>
+    <a href="./profile.html">Profiles</a>
+    <a href="./contact.html">Contact Us</a>
   </div>
-</nav>
 
-<div class="container">
-<h1 class="header">
-<span class="title">Marriage Candidate Form</span><br>
-<span class="subtitle">Please fill in your details and upload your photo.</span>
-</h1>
-<form action="submit.php" method="post" enctype="multipart/form-data">
-<label for="gender">Select Candidates Gender:</label>
-<select id="gender" name="gender" required placeholder=" state your Gender" >
-  <option value="">Select</option>
-<option value="male">Male</option>
-<option value="female">Female</option>
-</select>
 
-<label for="filled_by">Form Filled by (for Admin):</label>
+  <div class="container">
+    <h1 class="header">
+      <span class="title">Marriage Candidate Form</span><br>
+      <span class="subtitle">Please fill in your details and upload your photo.</span>
+    </h1>
+    <form action="submit.php" method="post" enctype="multipart/form-data">
+      <label for="gender">Select Candidates Gender:</label>
+      <select id="gender" name="gender" required placeholder=" state your Gender" >
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      
+      <label for="filled_by">Form Filled by (for Admin):</label>
 <select id="Filled by" name="Formed filled by (for admin)">
-<option value="">Select</option>
-<option value="self">Self</option>
-<option value="Mother">Mother</option>
-<option value="Father">Father</option>
+  <option value="">Select</option>
+  <option value="self">Self</option>
+  <option value="Mother">Mother</option>
+  <option value="Father">Father</option>
 <option value="Guardian">Guardian</option>
 <option value="Brother">Brother</option>
 <option value="Sister">Sister</option>
@@ -72,21 +59,21 @@ Link to Bootstrap
 <a href="https://www.familylaw.co.uk/news_and_comment/talaq-khula-faskh-tafweedh-the-different-methods-of-islamic-separation-part-1">Islamic Marital Explanations:</a>
 
 <select id="marital_status" name="marital_status" required>
-<option value="">Select</option>
-<option value="single">Single</option>
-<option value="divorced">Divorced</option>
-<option value="No Ruksati">Short marriage / Divorced, No Ruksati</option>
-<option value="widowed">Widowed</option>
-<option value="Khula">Khula (Separation by way of consent between the parties) See explanation above</option>
-<option value="Faskh">Faskh-e-Nikah (Dissolution of Marriage) See explanation above</option>
-<option value="Talaq">Talaq (Granting of Divorce by the Husband) See explanation above</option>
-<option value="Tafweedh-e-Talaq">Tafweedh-e-Talaq (When the power of Talaq is transferred to the Wife) See explanation above</option>
-<option value="other">Other, Explain in box below</option>
-<input type="text"id="IF SELECTING other,please expalin" name="if selecting other please explain" required placeholder="If selecting other, please explain here." >
- 
-<!--the below url needs to be highlighted in the options fr explanations]-->
-
-
+  <option value="">Select</option>
+  <option value="single">Single</option>
+  <option value="divorced">Divorced</option>
+  <option value="No Ruksati">Short marriage / Divorced, No Ruksati</option>
+  <option value="widowed">Widowed</option>
+  <option value="Khula">Khula (Separation by way of consent between the parties) See explanation above</option>
+  <option value="Faskh">Faskh-e-Nikah (Dissolution of Marriage) See explanation above</option>
+  <option value="Talaq">Talaq (Granting of Divorce by the Husband) See explanation above</option>
+  <option value="Tafweedh-e-Talaq">Tafweedh-e-Talaq (When the power of Talaq is transferred to the Wife) See explanation above</option>
+  <option value="other">Other, Explain in box below</option>
+  <input type="text"id="IF SELECTING other,please expalin" name="if selecting other please explain" required placeholder="If selecting other, please explain here." >
+  
+  <!--the below url needs to be highlighted in the options fr explanations]-->
+  
+  
 </select>
 
 <label for="age" required>Select Candidate Current Age:</label>
@@ -101,50 +88,50 @@ Link to Bootstrap
   <option value="">Select</option>
   <option value="Less than 4'11&quot;">Less than 4'11 (150cm)&quot;</option>
   <option value="150">4'11&quot; (150cm)</option>
-<option value="152.4">5'0&quot; (152.4cm)</option>
-<option value="154.9">5'1&quot; (154.9cm)</option>
-<option value="157.5">5'2&quot; (157.5cm)</option>
-<option value="160">5'3&quot; (160cm)</option>
-<option value="162.6">5'4&quot; (162.6cm)</option>
-<option value="165.1">5'5&quot; (165.1cm)</option>
-<option value="167.6">5'6&quot; (167.6cm)</option>
-<option value="170.2">5'7&quot; (170.2cm)</option>
-<option value="172.7">5'8&quot; (172.7cm)</option>
-<option value="175.3">5'9&quot; (175.3cm)</option>
-<option value="177.8">5'10&quot; (177.8cm)</option>
-<option value="180.3">5'11&quot; (180.3cm)</option>
-<option value="182.9">6'0&quot; (182.9cm)</option>
-<option value="185.4">6'1&quot; (185.4cm)</option>
-<option value="188">6'2&quot; (188cm)</option>
-<option value="190.5">6'3&quot; (190.5cm)</option>
-<option value="193">6'4&quot; (193cm)</option>
-<option value="195.6">6'5&quot; (195.6cm)</option>
-<option value="198.1">6'6&quot; (198.1cm)</option>
-<option value="200.7">6'7&quot; (200.7cm)</option>
-<option value="203.2">6'8&quot; (203.2cm)</option>
-<option value="205.7">6'9&quot; (205.7cm)</option>
-<option value="208.3">6'10&quot; (208.3cm)</option>
-<option value="210.8">6'11&quot; (210.8cm)</option>
-<option value="213.4">6'12&quot; (213.4cm)</option>
-<option value="7 &quot;">More than 7' (213.4cm)'&quot;</option>
+  <option value="152.4">5'0&quot; (152.4cm)</option>
+  <option value="154.9">5'1&quot; (154.9cm)</option>
+  <option value="157.5">5'2&quot; (157.5cm)</option>
+  <option value="160">5'3&quot; (160cm)</option>
+  <option value="162.6">5'4&quot; (162.6cm)</option>
+  <option value="165.1">5'5&quot; (165.1cm)</option>
+  <option value="167.6">5'6&quot; (167.6cm)</option>
+  <option value="170.2">5'7&quot; (170.2cm)</option>
+  <option value="172.7">5'8&quot; (172.7cm)</option>
+  <option value="175.3">5'9&quot; (175.3cm)</option>
+  <option value="177.8">5'10&quot; (177.8cm)</option>
+  <option value="180.3">5'11&quot; (180.3cm)</option>
+  <option value="182.9">6'0&quot; (182.9cm)</option>
+  <option value="185.4">6'1&quot; (185.4cm)</option>
+  <option value="188">6'2&quot; (188cm)</option>
+  <option value="190.5">6'3&quot; (190.5cm)</option>
+  <option value="193">6'4&quot; (193cm)</option>
+  <option value="195.6">6'5&quot; (195.6cm)</option>
+  <option value="198.1">6'6&quot; (198.1cm)</option>
+  <option value="200.7">6'7&quot; (200.7cm)</option>
+  <option value="203.2">6'8&quot; (203.2cm)</option>
+  <option value="205.7">6'9&quot; (205.7cm)</option>
+  <option value="208.3">6'10&quot; (208.3cm)</option>
+  <option value="210.8">6'11&quot; (210.8cm)</option>
+  <option value="213.4">6'12&quot; (213.4cm)</option>
+  <option value="7 &quot;">More than 7' (213.4cm)'&quot;</option>
 </select>
 
 <label for="body_type" required>Candidates Body Type:</label>
 <select id="body_type" name="body_type" multiple>
-<option value="">To select multiple options, you need to hold down the control (ctrl) button for windows or the command button for Mac</option>
-<option value="slim">Slim</option>
-<option value="average">Average</option>
-<option value="athletic">Athletic</option>
-<option value="curvy">Curvy</option>
-<option value="plus size">Plus size</option>
-<option value="Ectomorph">Ectomorph   (A lean and fast-metabolizing body)</option>
-<option value="Mesomorph">Mesomorph  (A body type with a natural tendency for muscle development)</option>
-<option value="Endomorph">Endomorph  (A body type with a tendency to store fat easily and a lower metabolic rate.)</option>
-<option value="Apple">Apple</option>
-<option value="Pear">Pear</option>
-<option value="Hour Glass">Hourglass</option>
-<option value="Don't want say">Don't want say</option>
-<option value="Doesn't Matter">Doesn't Matter</option>
+  <option value="">To select multiple options, you need to hold down the control (ctrl) button for windows or the command button for Mac</option>
+  <option value="slim">Slim</option>
+  <option value="average">Average</option>
+  <option value="athletic">Athletic</option>
+  <option value="curvy">Curvy</option>
+  <option value="plus size">Plus size</option>
+  <option value="Ectomorph">Ectomorph   (A lean and fast-metabolizing body)</option>
+  <option value="Mesomorph">Mesomorph  (A body type with a natural tendency for muscle development)</option>
+  <option value="Endomorph">Endomorph  (A body type with a tendency to store fat easily and a lower metabolic rate.)</option>
+  <option value="Apple">Apple</option>
+  <option value="Pear">Pear</option>
+  <option value="Hour Glass">Hourglass</option>
+  <option value="Don't want say">Don't want say</option>
+  <option value="Doesn't Matter">Doesn't Matter</option>
 <option value="Other">Other (explain in the box below)</option>
 <input type="text"id="If selecting other,please expalin" name="if selecting other please explain" required placeholder="If selecting other, please explain here." >
 
@@ -154,18 +141,18 @@ Link to Bootstrap
 <textarea id="education_history" name="education_history" rows="2" cols="50"></textarea>
 
 <label for="partner_nationality" required> Current Nationality Status:</label>
-        <select id="partner_nationality" name="nationality">
-        <option value="plus size">Select</option>
-        <option value="British">British Only</option>
-        <option value="British/pakistani">British/Pakistani(Dual National)</option>
-        <option value="Indefinate right to stay">Indefinate Right to stay</option>
-        <option value="Pakistani">Pakistani</option>
-        <option value="Work Permit">Work Permit</option>
-        <option value="Student Visa">Student Visa</option>
-        <option value="Over Stayer">Over Stayer</option>
-        <option value="Undocumented">Undocumented </option>
-        <option value="Other(explain in State any information not covered or disclosed section)">Other(explain in the box below)</option>
-        <input type="text"id="IF SELECTING other,please expalin" name="if selecting other please explain" required placeholder="If selecting other, please explain here." >
+<select id="partner_nationality" name="nationality">
+  <option value="plus size">Select</option>
+  <option value="British">British Only</option>
+  <option value="British/pakistani">British/Pakistani(Dual National)</option>
+  <option value="Indefinate right to stay">Indefinate Right to stay</option>
+  <option value="Pakistani">Pakistani</option>
+  <option value="Work Permit">Work Permit</option>
+  <option value="Student Visa">Student Visa</option>
+  <option value="Over Stayer">Over Stayer</option>
+  <option value="Undocumented">Undocumented </option>
+  <option value="Other(explain in State any information not covered or disclosed section)">Other(explain in the box below)</option>
+  <input type="text"id="IF SELECTING other,please expalin" name="if selecting other please explain" required placeholder="If selecting other, please explain here." >
 </select>
 
 
@@ -222,40 +209,40 @@ Other<input type="checkbox" id="Other" name="Other" value="Other">Tick &nbsp;&nb
 <label for="islamic_sect" required>Islamic sect:</label>
 
 <input type="radio" id="sunni" name="religion" value="sunni">
-  <label for="sunni">Sunni</label><br>
-  
-  <input type="radio" id="shia" name="religion" value="shia">
-  <label for="shia">Shia</label><br>
-  
-  <input type="radio" id="sufi" name="religion" value="sufi">
-  <label for="sufi">Sufi</label><br>
-  
-  <input type="radio" id="salafi" name="religion" value="salafi">
-  <label for="salafi">Salafi</label><br>
-  
-  <input type="radio" id="other" name="religion" value="other">
-  <label for="other">Other</label>
+<label for="sunni">Sunni</label><br>
+
+<input type="radio" id="shia" name="religion" value="shia">
+<label for="shia">Shia</label><br>
+
+<input type="radio" id="sufi" name="religion" value="sufi">
+<label for="sufi">Sufi</label><br>
+
+<input type="radio" id="salafi" name="religion" value="salafi">
+<label for="salafi">Salafi</label><br>
+
+<input type="radio" id="other" name="religion" value="other">
+<label for="other">Other</label>
 
 
 
 <br>
 <label for="islamic_sect" required>Islamic sect:</label>
- 
-  <input type="radio" id="sunni" name="religion" value="sunni">
-  <label for="sunni">Sunni</label><br>
-  
-  <input type="radio" id="shia" name="religion" value="shia">
-  <label for="shia">Shia</label><br>
-  
-  <input type="radio" id="sufi" name="religion" value="sufi">
-  <label for="sufi">Sufi</label><br>
-  
-  <input type="radio" id="salafi" name="religion" value="salafi">
-  <label for="salafi">Salafi</label><br>
-  
-  <input type="radio" id="other" name="religion" value="other">
-  <label for="other">Other</label>
-  <br>
+
+<input type="radio" id="sunni" name="religion" value="sunni">
+<label for="sunni">Sunni</label><br>
+
+<input type="radio" id="shia" name="religion" value="shia">
+<label for="shia">Shia</label><br>
+
+<input type="radio" id="sufi" name="religion" value="sufi">
+<label for="sufi">Sufi</label><br>
+
+<input type="radio" id="salafi" name="religion" value="salafi">
+<label for="salafi">Salafi</label><br>
+
+<input type="radio" id="other" name="religion" value="other">
+<label for="other">Other</label>
+<br>
 <input type="text"id="IF SELECTING other,please expalin" name="if selecting other please explain" required placeholder="If selecting other, please explain here." >
 </select>
 
@@ -281,67 +268,67 @@ Other<input type="checkbox" id="Other" name="Other" value="Other">Tick &nbsp;&nb
 
 <label for="daily_prayers" required>Daily prayers:</label>
 <select id="daily_prayers" name="daily_prayers">
-    <option value="">Select</option>
-    <option value="always">Always</option>
-    <option value="sometimes">Sometimes</option>
-    <option value="rarely">Rarely</option>
-    <option value="never">Never</option>
-    <option value="Time permits">Time Permits</option>
-    <option value="Work Permits">Work Permits</option>
-    <option value="Fajar">Fajar</option>
-    <option value="Zuhr">Zuhr</option>
-    <option value="Asr">Asr</option>
-    <option value="Maghrib">Maghrib</option>
-    <option value="Isha">Isha</option>
-    <option value="All 5 daily_prayers"> All 5 Daily prayers</option>
-    <option value="Optionals">Optionals</option>
-    <option value="working towards">Working towards</option>
+  <option value="">Select</option>
+  <option value="always">Always</option>
+  <option value="sometimes">Sometimes</option>
+  <option value="rarely">Rarely</option>
+  <option value="never">Never</option>
+  <option value="Time permits">Time Permits</option>
+  <option value="Work Permits">Work Permits</option>
+  <option value="Fajar">Fajar</option>
+  <option value="Zuhr">Zuhr</option>
+  <option value="Asr">Asr</option>
+  <option value="Maghrib">Maghrib</option>
+  <option value="Isha">Isha</option>
+  <option value="All 5 daily_prayers"> All 5 Daily prayers</option>
+  <option value="Optionals">Optionals</option>
+  <option value="working towards">Working towards</option>
+  
+</select>
 
-    </select>
-    
-    <label for="completed_umrah" required>Completed Umrah:</label> 
-    <input type="radio" id="yes" name="completed_umrah" value="yes"> <label for="yes">Yes</label>
-    <input type="radio" id="no" name="completed_umrah" value="no"> <label for="no">No</label> &nbsp;&nbsp;
-    
-    <label for="completed_umrah_hajj" required>Completed Hajj:</label>
-    <input type="radio" id="yes" name="completed_hajj" value="yes">
-    <label for="yes">Yes</label>
-    <input type="radio" id="no" name="completed_hajj" value="no">
-    <label for="no">No</label>&nbsp;&nbsp;&nbsp;
-    <br>
-    <label for="other_religious_activities"required>State any other religious activities or actions otherwise state None:</label>
-    <input type="text" id="other_religious_activities" name="other_religious_activities">
-    
-    
-    <label for="Celebrate Milad" required>Celebrate Milad:</label> 
-    <input type="radio" id="yes" name="completed_umrah" value="yes"> <label for="yes">Yes</label>
-    <input type="radio" id="no" name="completed_umrah" value="no"> <label for="no">No</label> &nbsp;&nbsp;
-    
-    <label for="Celebrate Khatum"required>Celebrate Khatum:</label>
-    <input type="radio" id="yes" name="celebrate Khatum" value="yes">
-    <label for="yes">Yes</label>
-    <input type="radio" id="no" name="celebrate khatum" value="no">
-    <label for="no">No</label>&nbsp;&nbsp;&nbsp;
-    <br>
-    
-    <label for="other_religious_views" required>Other Religious Views/Opinions otherwise state None:</label>
-    <input type="text" id="other_religious_views" name="other_religious_views">
+<label for="completed_umrah" required>Completed Umrah:</label> 
+<input type="radio" id="yes" name="completed_umrah" value="yes"> <label for="yes">Yes</label>
+<input type="radio" id="no" name="completed_umrah" value="no"> <label for="no">No</label> &nbsp;&nbsp;
 
-    <label for="modesty"required>For Women:</label>
-    <select id="modesty" name="modesty">
-    <option value="select">Select</option>
-    <option value="hijab">Hijab</option>
-    <option value="niqab">Niqab</option>
-    <option value="burqa">Burqa</option> 
-    <option value="Mixing">No Free Mixing</option>
-    <option value="none">None</option>
-    <option value="other">Other(explain in State any information not covered or disclosed section)</option>
-    
-    </select>
-    
-    <label for="beard" required>For Men:</label>
-    <select id="beard" name="beard">
-    <option value="">Select</option>
+<label for="completed_umrah_hajj" required>Completed Hajj:</label>
+<input type="radio" id="yes" name="completed_hajj" value="yes">
+<label for="yes">Yes</label>
+<input type="radio" id="no" name="completed_hajj" value="no">
+<label for="no">No</label>&nbsp;&nbsp;&nbsp;
+<br>
+<label for="other_religious_activities"required>State any other religious activities or actions otherwise state None:</label>
+<input type="text" id="other_religious_activities" name="other_religious_activities">
+
+
+<label for="Celebrate Milad" required>Celebrate Milad:</label> 
+<input type="radio" id="yes" name="completed_umrah" value="yes"> <label for="yes">Yes</label>
+<input type="radio" id="no" name="completed_umrah" value="no"> <label for="no">No</label> &nbsp;&nbsp;
+
+<label for="Celebrate Khatum"required>Celebrate Khatum:</label>
+<input type="radio" id="yes" name="celebrate Khatum" value="yes">
+<label for="yes">Yes</label>
+<input type="radio" id="no" name="celebrate khatum" value="no">
+<label for="no">No</label>&nbsp;&nbsp;&nbsp;
+<br>
+
+<label for="other_religious_views" required>Other Religious Views/Opinions otherwise state None:</label>
+<input type="text" id="other_religious_views" name="other_religious_views">
+
+<label for="modesty"required>For Women:</label>
+<select id="modesty" name="modesty">
+  <option value="select">Select</option>
+  <option value="hijab">Hijab</option>
+  <option value="niqab">Niqab</option>
+  <option value="burqa">Burqa</option> 
+  <option value="Mixing">No Free Mixing</option>
+  <option value="none">None</option>
+  <option value="other">Other(explain in State any information not covered or disclosed section)</option>
+  
+</select>
+
+<label for="beard" required>For Men:</label>
+<select id="beard" name="beard">
+  <option value="">Select</option>
     <option value="full">Beard Full</option>
     <option value="trimmed">Beared Trimmed</option>
     <option value="shaved">Beared Shaved</option>
