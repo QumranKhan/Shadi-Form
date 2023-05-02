@@ -409,7 +409,7 @@ Other<input type="checkbox" id="Other" name="Other" value="Other">Tick &nbsp;&nb
         <input type="radio" id="no" name="have_disabilities" value="no">
         <label for="no">No</label>
         
-        <label for="accept_divorcee_widow_widower_married">Accept divorcee/widow/widower/married:</label>
+        <label for="accept_divorcee_widow_widower_married">Accept divorcee/widow/widower:</label>
         <input type="radio" id="yes" name="accept_divorcee_widow_widower_married" value="yes">
         <label for="yes">Yes</label>
         <input type="radio" id="no" name="accept_divorcee_widow_widower_married" value="no">
@@ -640,25 +640,266 @@ Other<input type="checkbox" id="Other" name="Other" value="Other">Tick &nbsp;&nb
         <input type="radio" id="Yes" name="by birth" value="by birth">
         <label for="sunni">Other</label>
         <input type="explain here"id="explain here" name="explain here"  placeholder="State Acceptable Status " >
-        
-      
-
-
-      </select>
-        <label for="partner_live_with_in_laws">Partner to live with in-laws after marriage?:</label>
         <br>
         
-<input type="checkbox" name="question1[]" value="no">No<br>
-<input type="checkbox" name="question1[]" value="privacy">No due to Privacy<br>
-<input type="checkbox" name="question1[]" value="plus size">Initally<br>
-<input type="checkbox" name="question1[]" value="Live independently">Live independently<br>
-<input type="checkbox" name="question1[]" value="to be discussed">To be discussed<br>
-<input type="checkbox" name="question1[]" value="mutual agreement">Mutual agreement<br>
-<input type="checkbox" name="question1[]" value="N/A">N/A<br>
-        </select>
+        <label for="ethnicity" required>Partners Ethnicity:</label>
+        <label for="Pakistani">Pakistani</label> 
+        <input type="checkbox" id="Pakistani" name="Pakistani" value="Pakistani">&nbsp; Tick box, If not state what is acceptable:
+        <input type="Your ethnicity" id="Your ethnicity" name="Your ethnicity" placeholder="What is candidates ethnicity"> 
+        <br>
         
-        <label for="partner_other_requirements">State anything NOT detailed in Partner sections or disclosed (include any critical/deal breakers):</label>
-        <textarea id="partner_other_requirements" name="partner_other_requirements" rows="2" cols="50"></textarea>
+        
+        <label for="spoken_languages" required >Spoken Languages:</label>&nbsp;&nbsp;&nbsp;
+        <label for="English">English</label>
+        <input type="checkbox" id="English" name="English" value="English">&nbsp;
+        <label for="Urdu">Urdu</label>
+        <input type="checkbox" id="Urdu" name="Urdu" value="Urdu">&nbsp;
+        <label for="Punjabi">Punjabi</label>
+        <input type="checkbox" id="Punjabi" name="Punjabi" value="Punjabi">
+        <label for="All">All of them</label>
+        <input type="checkbox" id="All of them" name="all of them" value="All of them"> 
+        <label for="All">Doesn't Matter</label>
+        <input type="checkbox" id="Doesn't Matter" name="Doesn't Matter" value="Doesn't Matter"> 
+        
+        <br>
+                
+        <label for="Partners qabeela_tribe_caste" required>Partners State Qabeela/Tribe or Caste:</label>
+        <input type= id="Otherwise State N/A or Doesn't Matter" name="Otherwise State N/A or Doesn't Matter" required placeholder="Otherwise State N/A, Doesn't Matter" style="font-size: 13px;width: 230px; height: 21px;" maxlength="60">
+        <!--missed <input type= "text" on pupose to get the size of the controlbox in above line thats why it is red = sign -->
+          
+        
+            <br><br>
+        <label for="Partners Islamic Sect"required>Partners Islamic Sect:</label>
+        
+          <input type="radio" id="sunni" name="religion" value="sunni">
+          <label for="sunni">Sunni</label>
+          
+          <input type="radio" id="shia" name="religion" value="shia">
+          <label for="shia">Shia</label>
+                 
+          <input type="radio" id="other" name="religion" value="other">
+          <label for="other">Other</label>
+          
+          <input type= id="Otherwise State N/A or Doesn't Matter" name="Otherwise State N/A or Doesn't Matter"  placeholder="Otherwise State N/A, Doesn't Matter" style="font-size: 13px;width: 230px; height: 21px;" maxlength="60">
+        <!--missed <input type= "text" on pupose to get the size of the controlbox in above line thats why it is red = sign -->
+          
+        
+        </select>
+        <br>
+        <label for="Partners level_of_islam"required>Partners Level of Islam:</label>
+        
+        <input type="radio" id="practicing" name="religious-practice" value="practicing">
+        <label for="practicing">Practicing</label>
+        
+        <input type="radio" id="moderate" name="religious-practice" value="moderate">
+        <label for="moderate">Moderate</label>
+        
+        <input type="radio" id="liberal" name="religious-practice" value="liberal">
+        <label for="liberal">Liberal</label>
+               
+        <input type="radio" id="other" name="religious-practice" value="other">
+        <label for="other">Other</label>
+        
+        <input type= id="Please explain here" name="Please explain here" placeholder="Please explain here" style="font-size: 13px;width: 230px; height: 21px;" maxlength="60">
+          <!--missed <input type= "text" on pupose to get the size of the controlbox in above line thats why it is red = sign -->
+            
+        </select>
+        <br>
+        <label for="Partners daily_prayers" required>Partners Daily prayers:</label>
+          
+        <input type="checkbox" id="always" name="daily_prayers" value="always">
+        <label for="always">Always</label>
+        
+        <input type="checkbox" id="sometimes" name="daily_prayers" value="sometimes">
+        <label for="sometimes">Sometimes</label>
+        
+        <input type="checkbox" id="working-towards" name="daily_prayers" value="working towards">
+        <label for="working-towards">Working towards</label>
+        
+        <input type="checkbox" id="optionals" name="daily_prayers" value="optionals" >
+        <label for="optionals">Optionals</label>
+        <input type= id="Eid,Tahajjud,Jummah etc" name="Eid,Tahajjud,Jummah etc" placeholder="Eid,Tahajjud,Jummah etc" style="font-size: 13px;width: 230px; height: 21px;" maxlength="60">
+        <!--missed <input type= "text" on pupose to get the size of the controlbox in above line thats why it is red = sign -->
+            
+        <br>
+            <label for="Celebrate Milad" required>Celebrate Milad:</label> 
+            <input type="radio" id="yes" name="completed_umrah" value="yes"> <label for="yes">Yes</label>
+            <input type="radio" id="no" name="completed_umrah" value="no"> <label for="no">No</label> &nbsp;&nbsp;
+            
+            <label for="Celebrate Khatum"required>Celebrate Khatum:</label>
+            <input type="radio" id="yes" name="celebrate Khatum" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="celebrate khatum" value="no">
+            <label for="no">No</label>&nbsp;&nbsp;&nbsp;
+            <br>
+            
+            <label for="other_religious_views" required>Other Religious Views/Opinions otherwise state None:</label>
+            <input type= id="Any Other Religious Views" name="Any Other Religious Views" placeholder="Any Other Religious Views" style="font-size: 13px;width: 230px; height: 21px;" maxlength="60">
+            <!--missed <input type= "text" on pupose to get the size of the controlbox in above line thats why it is red = sign -->
+               
+            <br><br>
+            <label for="modesty"required>Partner's Modesty For Women:</label>
+           
+            <label><input type="checkbox" name="hijab" value="hijab"> Hijab</label>
+            
+            <label><input type="checkbox" name="niqab" value="niqab">  Niqab</label>
+            
+            <label><input type="checkbox" name="burqa" value="burqa"> Burqa</label>
+            
+            <label><input type="checkbox" name="mixing" value="Mixing"> No Free Mixing</label>
+                 
+            <label><input type="checkbox" name="other" value="other"> Other</label>
+
+            <input type= id="Please explain here" name="Please explain here" placeholder="Please explain here" style="font-size: 13px;width: 200px; height: 21px;" maxlength="60">
+            <!--missed <input type= "text" on pupose to get the size of the controlbox in above line thats why it is red = sign -->
+              
+            </select>
+            <br>
+            <label for="beard" required>Partner's Modesty For Men:</label>
+               
+            <label><input type="checkbox" name="beard" value="full">  Beard Full</label>
+            
+            <label><input type="checkbox" name="beard" value="trimmed"> Beard Trimmed</label>
+            
+            <label><input type="checkbox" name="beard" value="shaved">  Beard Shaved</label>
+            
+            <label><input type="checkbox" name="gaze" value="Gaze">    Lowering of the Gaze</label>
+            
+            <label><input type="checkbox" name="mixing" value="Mixing"> No Free Mixing</label>
+            
+              <label><input type="checkbox" name="mixing" value="Mixing"> Modern hairstyle (barber cut)</label>
+        
+            <label><input type="checkbox" name="none" value="none"> Sunnah hair (shoulder length)</label>
+              
+            <label><input type="checkbox" name="other" value="other">
+              Other</label>
+            
+              <input type= id="Please explain here" name="Please explain here" placeholder="Please explain here" style="font-size: 13px;width: 169px; height: 21px;" maxlength="60">
+              <!--missed <input type= "text" on pupose to get the size of the controlbox in above line thats why it is red = sign -->
+                
+            </select>
+            
+            <br>
+            <label for="Partner living_with_parents" required>Partner Living with parents:</label>&nbsp;&nbsp;
+            <input type="radio" id="yes" name="living_with_parents" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="living_with_parents" value="no">
+            <label for="no">No</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <label for="Partnerliving_independently">Partner Living independently:</label>
+            <input type="radio" id="yes" name="living_independently" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="living_independently" value="no">
+            <label for="no">No</label>
+            
+            <br>
+            <label for="live_with_in_laws">Partner to Live with in-laws after marriage:</label>
+            <input type="radio" id="live_with_in_laws" name="live_with_in_laws" value="live_with_in_laws">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="live_with_in_laws" value="no">
+            <label for="no">No</label>&nbsp;&nbsp;
+        
+            <input type="radio" id="No due to privacy" name="no due to privacy" value="no due to privacy">
+            <label for="No">No due to Privacy</label>&nbsp;&nbsp;
+            <input type="radio" id="Live independently" name="Live independently" value="Live independently">
+            <label for="No">Live independently</label>&nbsp;&nbsp;
+        
+            <input type="radio" id="initially" name="initially" value="initially">
+            <label for="No">Initially</label>&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="Mutually agreement" name="mutual agreemant" value="mutual agreement">
+            <label for="No">Mutual Agreement</label>&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="N/A" name="N/A" value="N/A">
+            <label for="NA">N/A</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+             Anything else to add:
+            <input type="State anything other than above" id="State anything other than above" name="State anything other than above" placeholder="Honesty is best">
+        
+                <br>
+                <label for="have_children">Does Partner have children:</label>
+                <input type="radio" id="yes" name="have_children" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="have_children" value="no">
+                <label for="no">No</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <label for="want_children">Does Partner want children after marriage:</label>
+                <input type="radio" id="yes" name="want_children" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="want_children" value="no">
+                <label for="no">No</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <label for="have_disabilities">Partners Disabilities:</label>
+                <input type="radio" id="yes" name="have_disabilities" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="have_disabilities" value="no">
+                <label for="no">No</label>
+        <br>
+        
+                <label for="married-by">Partner Married by:</label>
+                
+                
+                
+                <input type="radio" id="asap" name="timeline" value="ASAP">
+                <label for="asap">ASAP</label>
+        
+                
+                <input type="radio" id="6-months" name="timeline" value="6 months">
+                <label for="6-months">6 Months</label>
+        
+                
+                <input type="radio" id="1-year" name="timeline" value="1 year">
+                <label for="1-year">1 Year</label>
+        
+                
+                <input type="radio" id="mutually-agreeable" name="timeline" value="mutually agreeable">
+                <label for="mutually-agreeable">Mutually Agreeable</label>
+        
+                
+                <input type="radio" id="all-of-the-above" name="timeline" value="all of the above">
+                <label for="All of the before">All of the before</label>
+        
+          
+                
+        
+                <br><br>                
+              
+                <label for="smoke_drink_drugs_shisha">Accept Partner if:</label>
+                <input type="checkbox" id="smoke" name="smoke_drink_drugs_shisha" value="smoke">
+                <label for="smoke">Smokes</label>
+                <input type="checkbox" id="drink" name="smoke_drink_drugs_shisha" value="drink">
+                <label for="drink">Drinks</label>
+                <input type="checkbox" id="drugs" name="smoke_drink_drugs_shisha" value="drugs">
+                <label for="drugs">Drugs</label>
+                <input type="checkbox" id="shisha" name="smoke_drink_drugs_shisha" value="shisha">
+                <label for="shisha">Shisha</label>
+                <input type="checkbox" id="none" name="smoke_drink_drugs_shisha" value="none">
+                <label for="none">None</label>&nbsp;&nbsp;&nbsp;
+                Anything else:
+                <input type= id="State if applicable" name="State if applicable" placeholder="State if applicable" style="font-size: 13px;width: 169px; height: 21px;" maxlength="60">
+                <!--missed <input type= "text" on pupose to get the size of the controlbox in above line thats why it is red = sign -->
+                
+                           
+                <br>
+                
+                <label for="previous_relationships">Partners Relationships:</label>
+                
+                <input type="State if applicable" id="State if applicable" name="State if applicable" placeholder="State if applicable">
+               
+                <br><br>
+                <label for="about_me">About Partner:</label>
+                <textarea id="about_me" name="about_me" placeholder="List your likes and dislikes,your traits etc. " rows="2" cols="50"></textarea>
+                
+                <label for="people_in_my_family">About Partners family:</label>
+                <textarea id="people_in_my_family" name="people_in_my_family" placeholder="Who is in your family and the type of family you are and type of family you are looking for." rows="2" cols="50"></textarea>
+                
+                <label for="Do you have any other UK family">Partners any other UK family:</label>
+                <textarea id="Do you have any other UK family" name="Do you have any other UK family" placeholder=" Generaly other family than you in the uk." rows="2" cols="50"></textarea>
+        <BR><BR>
+                State anything NOT detailed in Partners sections or disclosed (include any critical/deal breakers):
+               <textarea id="partner_requirements_qualities" name="partner_requirements_qualities" placeholder="List anything not covered above. " rows="2" cols="50"></textarea>
+                
+        
+        
+        
 
         <label for="photo">Photo:</label>
         <input type="file" id="photo" name="photo" accept=".jpg,.png,.gif" required>
