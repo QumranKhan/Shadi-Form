@@ -47,23 +47,22 @@
 <input type="text" id="candidate_name" name="candidate_name" placeholder="If choosing Guardian State your relationship to the guardian otherwise enter N/A">
 </select>
 <br>
-<label for="Contactname">Contact name:</label>
-<input type="contact" id="Contact" name="Contact" required>
+<label for="Contactname">Contact Name:</label>
+<input type="contact" id="Contact" name="Contact" required placeholder="Name of Contact">
 <label for="phone">Phone:</label>
-<input type="tel" id="phone" name="phone" required>
+<input type="tel" id="phone" name="phone" required placeholder="Contact UK number">
 <label for="email">Email:</label>
-<input type="email" id="email" name="email" required>
+<input type="email" id="email" name="email" required placeholder="Contact email">
 
 <br>
-<label for="candidate_name">Candidate name:</label>
-<input type="text" id="candidate_name" name="candidate_name" required placeholder="State Candidate name">
-
-
+<label for="candidate_name">Candidate Name:</label>
+<input type= id="State Candidate Name here" name="State Candidate Name here" required placeholder="State Candidate Name here" style="font-size: 13px;width: 300px; height: 21px;" maxlength="60">
+<!--missed <input type= "text" on pupose to get the size of the controlbox in above line thats why it is red = sign -->
 <br>
 
 <label for="marital_status">Candidate's Marital Status:</label>
 <a href="https://www.familylaw.co.uk/news_and_comment/talaq-khula-faskh-tafweedh-the-different-methods-of-islamic-separation-part-1">Islamic Marital Explanations:</a>
-
+<br>
 <label><input type="checkbox" name="marital_status[]" value="single">Single</label>
 <label><input type="checkbox" name="marital_status[]" value="divorced">Divorced</label>
 <label><input type="checkbox" name="marital_status[]" value="civil_divorced">Civil Divorced (Decree Nisi)</label>
@@ -147,7 +146,11 @@
   <input type="checkbox" id="other" name="body_type[]" value="Other">
   <label for="other">Other</label>
   
-<input type="please explain here"id="please explain here" name="please explain here" required placeholder="Please explain here">
+
+<input type= id="Please explain here" name="Please explain here" required placeholder="Please explain here" style="font-size: 13px;width: 300px; height: 21px;" maxlength="60">
+<!--missed <input type= "text" on pupose to get the size of the controlbox in above line thats why it is red = sign -->
+
+
 
 </select>
 <br>
@@ -167,8 +170,9 @@
 
 <input type="radio" id="other" name="nationality_type" value="other" required>
 <label for="other">Other:</label>
-<input type="text" id="explain_here" name="explain_here" placeholder="Please explain here" required>
-        
+<input type= id="Please explain here" name="Please explain here" required placeholder="Please explain here" style="font-size: 13px;width: 230px; height: 21px;" maxlength="60">
+<!--missed <input type= "text" on pupose to get the size of the controlbox in above line thats why it is red = sign -->
+      
 
 <br>
 <label for="ethnicity" required>State Ethnicity:</label>
@@ -196,6 +200,12 @@ State any others:
 
 <label for="qabeela_tribe_caste" required>Qabeela/Tribe or Caste:</label>
 <input type="Your Ancestory" id="qabeela_tribe_caste" name="qabeela_tribe_caste" required placeholder="Candidates Ancestory"> 
+<label for="Contactname" required>Fathers:</label>
+<input type= id="Please explain here" name="Please explain here" required placeholder="Fathers Ancestory">
+<!--missed <input type= "text" on pupose to get the size of the controlbox in above line thats why it is red = sign -->
+<input type= id="Please explain here" name="Mothers" required placeholder="Mothers Ancestory">
+<!--missed <input type= "text" on pupose to get the size of the controlbox in above line thats why it is red = sign --> 
+
 
 <br>
 <label for="Contactname" required>Fathers Origin:Pakistan:</label>
