@@ -207,7 +207,7 @@
 <!--missed <input type= "text" on pupose to get the size of the controlbox in above line thats why it is red = sign -->
  
 <br>
-<label for="ethnicity" required>State Ethnicity:</label>
+<label for="ethnicity" required>Candidates Ethnicity:</label>
 <label for="Pakistani">Pakistani</label> 
 <input type="checkbox" id="Pakistani" name="Pakistani" value="Pakistani">&nbsp; Tick box, If not state your ethinicity:
 <input type="Your ethnicity" id="Your ethnicity" name="Your ethnicity" placeholder="What is candidates ethnicity"> 
@@ -435,18 +435,30 @@ Other<input type="checkbox" id="Other" name="Other" value="Other">Tick &nbsp;&nb
         <label for="yes">Yes</label>
         <input type="radio" id="no" name="want_children" value="no">
         <label for="no">No</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        
+        <br>
         <label for="have_disabilities">Any Disabilities:</label>
         <input type="radio" id="yes" name="have_disabilities" value="yes">
         <label for="yes">Yes</label>
         <input type="radio" id="no" name="have_disabilities" value="no">
         <label for="no">No</label>
-        
-        <label for="accept_divorcee_widow_widower_married">Accept divorcee/widow/widower:</label>
+
+        <input type="checkbox" id="State" name="Disabilities" value="Disabilities" >
+        <label for="optionals">If Yes</label>
+        <input type= id="State both visible and hidden" name="State both visible and hidden" placeholder="State both visible and hidden" style="font-size: 13px;width: 230px; height: 21px;" maxlength="224">
+        <!--missed <input type= "text" on pupose to get the size of the controlbox in above line thats why it is red = sign -->
+            
+
+        <br>
+        <label for="accept_divorcee_widow_widower_married">Candidate Accepts Divorcee/Widow/Widower:</label>
         <input type="radio" id="yes" name="accept_divorcee_widow_widower_married" value="yes">
         <label for="yes">Yes</label>
         <input type="radio" id="no" name="accept_divorcee_widow_widower_married" value="no">
         <label for="no">No</label>
+         <label><input type="checkbox" name="other" value="other"> Other</label>
+    
+    <input type="Other please explain here" id="Other please explain here" name="Other please explain here" placeholder="Please explain here">
+        
+        
         <br>
 
         <label for="married-by">Married by:</label>
@@ -534,13 +546,13 @@ Other<input type="checkbox" id="Other" name="Other" value="Other">Tick &nbsp;&nb
       <label><input type="checkbox" name="marital_status[]" value="faskh">Faskh-e-Nikah (Dissolution of Marriage) See explanation above</label>
       <label><input type="checkbox" name="marital_status[]" value="talaq">Talaq (Granting of Divorce by the Husband) See explanation above</label>
       <label><input type="checkbox" name="marital_status[]" value="tafweedh-e-talaq">Tafweedh-e-Talaq (When the power of Talaq is transferred to the Wife) See explanation above</label>
-      <label><input type="checkbox" name="marital_status[]" value="other">Other, please explain in box or enter N/A</label>
-      <input type="text" id="please_explain_here" name="please_explain_here" placeholder="Please explain here or enter N/A">
+      <label><input type="checkbox" name="marital_status[]" value="other">Other, Please explain here or enter N/A</label>
+      <input type="text" id="please_explain_here" name="please_explain_here" placeholder="Please explain here or enter N/A" style="font-size: 13px;width: 500px; height: 21px;" maxlength="200">
       
 <br>
-        <label for="partner_age_range">Partner Age Range:</label>
-        <select name="age" id="age">
-          <option value="">Select</option>
+        <label for="partner_age_range">Partner Age Range:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select name="age" id="age" style="font-size: 13px;width: 500px; height: 21px;" maxlength="60">
+          
           <option value="18-23">18-23</option>
           <option value="24-28">24-28</option>
           <option value="29-33">29-33</option>
@@ -558,9 +570,9 @@ Other<input type="checkbox" id="Other" name="Other" value="Other">Tick &nbsp;&nb
           
         </select>  
         
-        
+        <br>
         <label for="Maximum Height">Partner Minimum Height:</label>
-        <select id="Maxium Height" name="Maxium Height">
+        <select id="Maxium Height" name="Maxium Height"  style="font-size: 13px;width: 500px; height: 21px;" maxlength="60">
           <option value="">Select</option>
           <option value="Less than 4'11&quot;">Less than 4'11 (150cm)&quot;</option>
           <option value="150">4'11&quot; (150cm)</option>
@@ -593,7 +605,7 @@ Other<input type="checkbox" id="Other" name="Other" value="Other">Tick &nbsp;&nb
         </select>
 
 	<label for="Maximum Height">Partner Maximum Height:</label>
-        <select id="Maxium Height" name="Maxium Height">
+        <select id="Maxium Height" name="Maxium Height"  style="font-size: 13px;width: 500px; height: 21px;" maxlength="60">
           <option value="">Select</option>
           <option value="Less than 4'11&quot;">Less than 4'11 (150cm)&quot;</option>
           <option value="150">4'11&quot; (150cm)</option>
@@ -626,7 +638,7 @@ Other<input type="checkbox" id="Other" name="Other" value="Other">Tick &nbsp;&nb
         </select>
 
         <br>
-        <label for="complexion">Candidates Complexion:</label>
+        <label for="complexion">Partners Complexion:</label>
         <input type="checkbox" id="Fair" name="Fair" value="Fair">
         <label for="Fair">Fair</label>
         <input type="checkbox" id="Medium" name="Medium" value="Medium">
@@ -634,11 +646,14 @@ Other<input type="checkbox" id="Other" name="Other" value="Other">Tick &nbsp;&nb
         <input type="checkbox" id="Olive" name="Olive" value="Olive">
         <label for="Olive">Olive</label>
         <input type="checkbox" id="Deep" name="Deep" value="Deep">
-        <label for="Deep">Deep</label>&nbsp;&nbsp;
+        <label for="Deep">Deep</label>
+        <input type="checkbox" id="Doesn't Matter" name="Doesn't Matter" value="Doesn't Matter">
+        <label for="Olive">Doesn't Matter</label>
+
         <input type="checkbox" id="other" name="body_type[]" value="Other">
         <label for="other">Other</label>
         
-        <input type= id="Please explain here" name="Please explain here" required placeholder="Please State here" style="font-size: 13px;width: 300px; height: 21px;" maxlength="60">
+        <input type= id="Please explain here" name="Please explain here" required placeholder="Please State here" style="font-size: 13px;width: 200px; height: 21px;" maxlength="120">
         <!--missed <input type= "text" on pupose to get the size of the controlbox in above line thats why it is red = sign -->
         
 
@@ -677,7 +692,7 @@ Other<input type="checkbox" id="Other" name="Other" value="Other">Tick &nbsp;&nb
         </select>
 
         <br><br>
-        <label for="education_history"required>History of Education / Work or Business since School:</label>
+        <label for="education_history"required>Partners History of Education / Work or Business since School:</label>
         <textarea id="education_history" name="education_history" rows="2" cols="50"></textarea>
 
         <br><br>
@@ -706,7 +721,7 @@ Other<input type="checkbox" id="Other" name="Other" value="Other">Tick &nbsp;&nb
         <br>
         
         
-        <label for="spoken_languages" required >Spoken Languages:</label>&nbsp;&nbsp;&nbsp;
+        <label for="spoken_languages" required > Partners Spoken Languages:</label>&nbsp;&nbsp;&nbsp;
         <label for="English">English</label>
         <input type="checkbox" id="English" name="English" value="English">&nbsp;
         <label for="Urdu">Urdu</label>
@@ -779,11 +794,11 @@ Other<input type="checkbox" id="Other" name="Other" value="Other">Tick &nbsp;&nb
         <!--missed <input type= "text" on pupose to get the size of the controlbox in above line thats why it is red = sign -->
             
         <br>
-            <label for="Celebrate Milad" required>Celebrate Milad:</label> 
+            <label for="Celebrate Milad" required> Partner Celebrates Milad:</label> 
             <input type="radio" id="yes" name="completed_umrah" value="yes"> <label for="yes">Yes</label>
             <input type="radio" id="no" name="completed_umrah" value="no"> <label for="no">No</label> &nbsp;&nbsp;
             
-            <label for="Celebrate Khatum"required>Celebrate Khatum:</label>
+            <label for="Celebrate Khatum"required>Partner Celebrates Khatum:</label>
             <input type="radio" id="yes" name="celebrate Khatum" value="yes">
             <label for="yes">Yes</label>
             <input type="radio" id="no" name="celebrate khatum" value="no">
@@ -889,7 +904,15 @@ Other<input type="checkbox" id="Other" name="Other" value="Other">Tick &nbsp;&nb
                 <input type="radio" id="yes" name="have_disabilities" value="yes">
                 <label for="yes">Yes</label>
                 <input type="radio" id="no" name="have_disabilities" value="no">
-                <label for="no">No</label>
+                <label for="no">No</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="State" name="Disabilities" value="Disabilities" >
+                <label for="optionals">If Yes</label>
+                <input type= id="State both visible and hidden" name="State both visible and hidden" placeholder="State both visible and hidden" style="font-size: 13px;width: 230px; height: 21px;" maxlength="224">
+                <!--missed <input type= "text" on pupose to get the size of the controlbox in above line thats why it is red = sign -->
+                    
+
+
+
         <br>
         
                 <label for="married-by">Partner Married by:</label>
