@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<style>
+    /*Style the navbar*/
+    .topnav {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color:#cccccc;
+        padding: 20px 20px;
+        margin-bottom: 20px;
+      }
+    
+      /*Style the links inside the navbar*/
+      .topnav a {
+        margin-right: 10px;;
+    
+      }
+      
+      /*Float navbar links to the right*/
+      .topnav a.split {
+        float: right;
+        color: rgb(223, 46, 188);
+      }
+
+      .container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #f0f0f0;
+    padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #f2f2ee;
+  border: 1px solid black;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #0be494;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+h3 {
+    color: #333333;
+    text-align: center;
+}
+
+    
+    </style>
+
+<body>
+
+     <!---Navbar Main Links-->
+  <div class="topnav">
+    <a class="active" href="./index.html">Home</a>
+    <a href="./profile.html">Profiles</a>
+    <a href="./islamic info.html">Islamic Information</a>
+    <a href="./FAQs.html">FAQ's</a>
+    <a href="./contact.html">Contact Us</a>
+  <!---Navbar Right Side-->
+    <a href="#insta" class="split">Instagram</a> <!---add icon for Instagram-->
+    <a href="#fb" class="split">Facebook</a> <!---add icon for FB-->
+    <a href="#whatsapp" class="split">Whatsapp</a> <!---add icon for Whatsapp-->
+  </div>
+
+  
+  <div class = "container">
+      <h1>Contact Us</h1>
+
+      <h3><em>Please fill out this form with the required information to send a contact request.</em></h3>
+    <form method="post" action="mailto:z_khan94@hotmail.co.uk" enctype="text/plain"><!---I don't know how to make this send to an email-->
+      
+        <fieldset> 
+        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        <label for="issue">Type of issue:
+            <select id="issue" name="issue">
+              <option value="">(select one)</option>
+              <option value="1">General queries</option>
+              <option value="2">Contacting my matches</option>
+              <option value="3">Hide/delete my profile</option>
+              <option value="4">Registration and Login</option>
+              <option value="5">My profile & photos related</option>
+              <option value="6">Partner - searching and contacting</option>
+              <option value="7">Privacy and confidentiality</option>
+              <option value="8">Feedback</option>
+              <option value="9">Report - member misuse</option> 
+              </select>
+      </fieldset>
+
+      <fieldset>
+      <label for="bio">Subject:
+        <textarea id="bio" name="bio" rows="1" cols="30" placeholder="What is your request about?"></textarea>
+      </label>
+
+      <label for="bio">Description:
+        <textarea id="bio" name="bio" rows="6" cols="30" placeholder="Provide more information here..."></textarea>
+      </label>
+     </fieldset>
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    </div>
+
+</body>
+</html>

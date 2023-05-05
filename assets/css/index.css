@@ -54,7 +54,7 @@
     }
     label {
       display: inline-flex;
-      vertical-align: centre;
+      vertical-align: center;
     }
   
   
@@ -105,5 +105,25 @@
    outline: 1px solid;
    outline-color: #666666;
   
+  }
+  
+  /*Style the navbar*/
+  .topnav {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:#cccccc;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+  }
+
+  /*Style the links inside the navbar*/
+  .topnav a {
+    margin-right: 10px;;
+
+  }
+  
+  /*Float navbar links to the right*/
+  .topnav a.split {
+    float: right;
+    color: rgb(223, 46, 188);
   }
   
