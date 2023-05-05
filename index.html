@@ -1,15 +1,20 @@
+<!DOCTYPE html>
+
 <html>
-<head>
-<title>Marriage Candidate Form</title>
-<link rel="stylesheet" type="text/css" href="./assets/css/index.css">
-</head>
+ <head>
+   <title>Marriage Candidate Form</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+  </head>
+
 
 <body>
+
 <div class="container">
 <h1 class="header">
 <span class="title">Marriage Candidate Form</span><br>
 <span class="subtitle">Please fill in your details and upload your photo.</span>
 </h1>
+
 <form action="submit.php" method="post" enctype="multipart/form-data">
 <label for="gender">Select Candidates Gender:</label>
 <select id="gender" name="gender" required placeholder=" state your Gender" >
@@ -563,7 +568,7 @@ State any others below:
         <label for="photo">Photo:</label>
         <input type="file" id="photo" name="photo" accept=".jpg,.png,.gif" required>
         
-      
+      <!--Submit button-->
         <div class="button-group">
         <button type="submit" class="submit-button">Submit</button>
         <button type="reset" class="reset-button">Reset</button>
