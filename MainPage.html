@@ -48,6 +48,22 @@
                     </select>
                     <input type="text" id="candidate_name" name="candidate_name" placeholder="Relationship to the guardian otherwise enter N/A">
                     
+                    <!--Contact Information-->
+                    <label for="Contactname">Contact Name:</label>
+                    <input type="text" id="Contact" name="Contact" required placeholder="Name of Contact">
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Contact ONLY UK number" pattern="^(\+44|0)[1-9]\d{8,}$">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Contact ONLY UK email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                    
+                    <!--Candidate name-->
+                    <label for="candidate_name">Candidate Name:</label>
+                    <input type="text" id="candidate_name" name="candidate_name" required placeholder="State Candidate's Name here">
+
+                    <!--Marital status-->
+                    
                 </form>
 
             </div>
