@@ -164,3 +164,11 @@
   output .span--hidden{
     visibility: hidden;
   }
+
+/*Filled by*/
+#filled-by{
+    font-size: 13px;
+    width: 80px; 
+    height: 39px;
+    max-block-size: 60;
+}
