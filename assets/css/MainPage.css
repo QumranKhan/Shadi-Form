@@ -22,15 +22,105 @@
     font-style: italic;
     color: #666666;
   }
-  
-  /* Style the form elements */
-  input[type=text], input[type=number], input[type=file], select, textarea {
+
+/*Upload image*/
+output{
     width: 100%;
-    padding: 12px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    min-height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: relative;
+    border-radius: 5px;
   }
+  
+  output .image{
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  output .image img{
+    height: 100%;
+    width: 100%;
+  }
+  
+  output .image span {
+    position: absolute;
+    top: -4px;
+    right: 4px;
+    cursor: pointer;
+    font-size: 22px;
+    color: white;
+  }
+  
+  output .image span:hover {
+    opacity: 0.8;
+  }
+  
+  output .span--hidden{
+    visibility: hidden;
+  }
+
+/*Filled by*/
+#filled-by{
+    font-size: 13px;
+    width: 80px; 
+    height: 39px;
+    max-block-size: 60;
+}
+
+
+
+ section {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    font-size: 13px;
+    width: 300px;
+    height: 21px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* Style for Radio buttons */
   input [type="radio button"] {
   
@@ -123,44 +213,4 @@
     color: rgb(223, 46, 188);
   }
   
-  /*Upload image*/
-  output{
-    width: 100%;
-    min-height: 150px;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 15px;
-    position: relative;
-    border-radius: 5px;
-  }
   
-  output .image{
-    height: 150px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-    position: relative;
-  }
-  
-  output .image img{
-    height: 100%;
-    width: 100%;
-  }
-  
-  output .image span {
-    position: absolute;
-    top: -4px;
-    right: 4px;
-    cursor: pointer;
-    font-size: 22px;
-    color: white;
-  }
-  
-  output .image span:hover {
-    opacity: 0.8;
-  }
-  
-  output .span--hidden{
-    visibility: hidden;
-  }

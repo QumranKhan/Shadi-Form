@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <title> Marriage Candidate Form</title>
-        <!--Link to CSS Styling-->
-        <link rel="stylesheet" type="text/css" href="./assets/css/MainPage.css">
         <!--Link to Bootstrap-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--Link to CSS Styling-->
+        <link rel="stylesheet" type="text/css" href="./assets/css/MainPage.css">
     </head>
 
     <body>
@@ -27,8 +27,42 @@
                 <input type="file" accept="image/jpeg, image/png, image/jpg">
                 <output></output>
 
-                <form>
-                    <label for = "gender"> Candidates Gender:</label>
+                <form action="submit-form.php" method="POST">
+                    <label for="gender">Candidates Gender:</label>
+                    <select id="gender" name="gender" required style="font-size: 13px; width: 80px; height: 39px;" maxlength="60">
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    </select>
+
+                    <!--Filled by-->
+                    <label for="filled-by">Form Filled by (for Admin):</label>
+                    <select id="filled-by" name="form_filled_by_admin">
+                        <option value="">Select</option>
+                        <option value="self">Self</option>
+                        <option value="Mother">Mother</option>
+                        <option value="Father">Father</option>
+                        <option value="Brother">Brother</option>
+                        <option value="Sister">Sister</option>
+                        <option value="Guardian">Guardian</option>
+                    </select>
+                    <input type="text" id="candidate_name" name="candidate_name" placeholder="Relationship to the guardian otherwise enter N/A">
+                    
+                    <!--Contact Information-->
+                    <label for="Contactname">Contact Name:</label>
+                    <input type="text" id="Contact" name="Contact" required placeholder="Name of Contact">
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Contact ONLY UK number" pattern="^(\+44|0)[1-9]\d{8,}$">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Contact ONLY UK email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                    
+                    <!--Candidate name-->
+                    <label for="candidate_name">Candidate Name:</label>
+                    <input type="text" id="candidate_name" name="candidate_name" required placeholder="State Candidate's Name here">
+
+                    <!--Marital status-->
                     
                 </form>
 
