@@ -67,7 +67,7 @@
 
                     <!--Candidate name-->
                     <label for="candidate_name">Candidate Name:</label>
-                    <input type="text" id="candidate_name" name="candidate_name" required placeholder="State Candidate's Name here">
+                    <input type="text" id="text-box" name="candidate_name" required placeholder="State Candidate's Name here">
 
                     
 
@@ -85,7 +85,7 @@
                     <label><input type="checkbox" name="marital_status[]" value="talaq">Talaq (Granting of Divorce by the Husband) See explanation above</label>
                     <label><input type="checkbox" name="marital_status[]" value="tafweedh-e-talaq">Tafweedh-e-Talaq (When the power of Talaq is transferred to the Wife) See explanation above</label>
                     <label><input type="checkbox" name="marital_status[]" value="other">Other, please explain in box or enter N/A</label>
-                    <input type="text" id="please_explain_here" name="please_explain_here" placeholder="Please explain here or enter N/A" maxlength="210">
+                    <input type="text" id="text-box" name="please_explain_here" placeholder="Please explain here or enter N/A" maxlength="210">
 
                     <!--Age and Height-->
                     <label for="age">Candidate's Current Age:</label>
@@ -119,8 +119,633 @@
                     </select>
                     
 
-                    <!--Complextion-->
+                    <!--Candidate Complextion-->
+                    <label for="complexion">Candidates Complexion:</label>
+                    <input type="checkbox" id="Fair" name="Fair" value="Fair">
+                    <label for="Fair">Fair</label>
+                    <input type="checkbox" id="Medium" name="Medium" value="Medium">
+                    <label for="Medium">Medium</label>
+                    <input type="checkbox" id="Olive" name="Olive" value="Olive">
+                    <label for="Olive">Olive</label>
+                    <input type="checkbox" id="other" name="other" value="Other">
+                    <label for="other">Other</label>
+                    <input type="text" id="explanation" name="text-box" required placeholder="Please State here" maxlength="60">
+                    
+                    <!--Candidate Body Type-->
+                    <label for="body_type" required>Candidates Build:</label>
+                    <br> 
+                    <input type="checkbox" id="slim" name="body_type[]" value="slim">
+                    <label for="slim">Slim</label>
+                    <input type="checkbox" id="average" name="body_type[]" value="average">
+                    <label for="average">Average</label>
+                    <input type="checkbox" id="athletic" name="body_type[]" value="athletic">
+                    <label for="athletic">Athletic</label>
+                    <input type="checkbox" id="curvy" name="body_type[]" value="curvy">
+                    <label for="curvy">Curvy</label>
+                    <input type="checkbox" id="plus_size" name="body_type[]" value="plus size">
+                    <label for="plus_size">Plus size</label><br>
+                    <input type="checkbox" id="ectomorph" name="body_type[]" value="Ectomorph">
+                    <label for="ectomorph">Ectomorph (A lean and fast-metabolizing body)</label><br>
+                    <input type="checkbox" id="mesomorph" name="body_type[]" value="Mesomorph">
+                    <label for="mesomorph">Mesomorph (A body type with a natural tendency for muscle development)</label><br>
+                    <input type="checkbox" id="endomorph" name="body_type[]" value="Endomorph">
+                    <label for="endomorph">Endomorph (A body type with a tendency to store fat easily and a lower metabolic rate.)</label><br>
+                    <input type="checkbox" id="apple" name="body_shape[]" value="Apple">
+                    <label for="apple">Apple</label>
+                    <input type="checkbox" id="pear" name="body_shape[]" value="Pear">
+                    <label for="pear">Pear</label>
+                    <input type="checkbox" id="hourglass" name="body_shape[]" value="Hour Glass">
+                    <label for="hourglass">Hourglass</label><br>
+                    <input type="checkbox" id="dont_want_say" name="body_type[]" value="Don't want say">
+                    <label for="dont_want_say">Don't want to say</label>
+                    <input type="checkbox" id="doesnt_matter" name="body_type[]" value="Doesn't Matter">
+                    <label for="doesnt_matter">Doesn't Matter</label>
+                    <input type="checkbox" id="other" name="body_type[]" value="Other">
+                    <label for="other">Other</label>
 
+                    <input type="text" id="text-box" name="explanation" required placeholder="Please explain here" maxlength="60">
+
+                    <!--Education History-->
+                    <label for="education_history" required>Candidates History of Education / Work or Business since School:</label>
+                    <input type="text" id="education_history" name="education_history" placeholder="Please State here" maxlength="60">
+                    <br><br>
+                    <label for="nationality" required>Candidate's Nationality Status:</label>
+
+                    <input type="checkbox" id="nationality" name="nationality" value="british">
+                    <label for="nationality">British</label>
+
+                    <input type="radio" id="by_birth" name="nationality_type" value="by_birth" required>
+                    <label for="by_birth">By Birth</label>
+
+                    <input type="radio" id="naturalisation" name="nationality_type" value="naturalisation" required>
+                    <label for="naturalisation">By Naturalisation</label>
+
+                    <input type="radio" id="other" name="nationality_type" value="other" required>
+                    <label for="other">Other:</label>
+                    <input type="text" id="explanation" name="explanation" required placeholder="Please explain here" maxlength="60">
+
+                    <!--Candidates Location-->
+                    <label for="location">Candidate's Current Location:</label>
+                    <select id="location" name="location" style="font-size: 13px;width: 300px; height: 21px;" maxlength="60">
+                    <optgroup label="Select London Area">
+                        <option value="Abbey Wood">Abbey Wood</option>
+                        <option value="Acton">Acton</option>
+                        <option value="Addington">Addington</option>
+                        <option value="Addiscombe">Addiscombe</option>
+                        <option value="Albany Park">Albany Park</option>
+                        <option value="Aldborough Hatch">Aldborough Hatch</option>
+                        <option value="Aldgate">Aldgate</option>
+                        <option value="Aldwych">Aldwych</option>
+                        <option value="Alperton">Alperton</option>
+                        <option value="Anerley">Anerley</option>
+                        <option value="Angel">Angel</option>
+                        <option value="Aperfield">Aperfield</option>
+                        <option value="Archway">Archway</option>
+                        <option value="Ardleigh Green">Ardleigh Green</option>
+                        <option value="Arkley">Arkley</option>
+                        <option value="Arnos Grove">Arnos Grove</option>
+                        <option value="Balham">Balham</option>
+                        <option value="Bankside">Bankside</option>
+                        <option value="Barbican">Barbican</option>
+                        <option value="Barking">Barking</option>
+                        <option value="Barkingside">Barkingside</option>
+                        <option value="Barnehurst">Barnehurst</option>
+                        <option value="Barnes">Barnes</option>
+                        <option value="Barnes Cray">Barnes Cray</option>
+                        <option value="Barnet Gate">Barnet Gate</option>
+                        <option value="Barnet (also Chipping Barnet, High Barnet)">Barnet (also Chipping Barnet, High Barnet)</option>
+                        <option value="Barnsbury">Barnsbury</option>
+                        <option value="Battersea">Battersea</option>
+                        <option value="Bayswater">Bayswater</option>
+                        <option value="Beckenham">Beckenham</option>
+                        <option value="Beckton">Beckton</option>
+                        <option value="Becontree">Becontree</option>
+                        <option value="Becontree Heath">Becontree Heath</option>
+                        <option value="Beddington">Beddington</option>
+                        <option value="Bedford Park">Bedford Park</option>
+                        <option value="Belgravia">Belgravia</option>
+                        <option value="Bellingham">Bellingham</option>
+                        <option value="Belmont">Belmont</option>
+                        <option value="Belmont">Belmont</option>
+                        <option value="Belsize Park">Belsize Park</option>
+                        <option value="Belvedere">Belvedere</option>
+                        <option value="Bermondsey">Bermondsey</option>
+                        <option value="Berrylands">Berrylands</option>
+                        <option value="Bethnal Green">Bethnal Green</option>
+                        <option value="Bexley (also Old Bexley, Bexley Village)">Bexley (also Old Bexley, Bexley Village)</option>
+                        <option value="Bexleyheath (also Bexley New Town)">Bexleyheath (also Bexley New Town)</option>
+                        <option value="Bickley">Bickley</option>
+                        <option value="Biggin Hill">Biggin Hill</option>
+                        <option value="Blackfen">Blackfen</option>
+                        <option value="Blackfriars">Blackfriars</option>
+                        <option value="Blackheath">Blackheath</option>
+                        <option value="Blackheath Royal Standard">Blackheath Royal Standard</option>
+                        <option value="Blackwall">Blackwall</option>
+                        <option value="Blendon">Blendon</option>
+                        <option value="Bloomsbury">Bloomsbury</option>
+                        <option value="Botany Bay">Botany Bay</option>
+                        <option value="Bounds Green">Bounds Green</option>
+                        <option value="Bow">Bow</option>
+                        <option value="Bowes Park">Bowes Park</option>
+                        <option value="Brentford">Brentford</option>
+                        <option value="Brent Cross">Brent Cross</option>
+                        <option value="Brent Park">Brent Park</option>
+                        <option value="Brimsdown">Brimsdown</option>
+                        <option value="Brixton">Brixton</option>
+                        <option value="Brockley">Brockley</option>
+                        <option value="Bromley">Bromley</option>
+                        <option value="Bromley-by-Bow">Bromley (also Bromley-by-Bow)</option>
+                        <option value="Bromley Common">Bromley Common</option>
+                        <option value="Brompton">Brompton</option>
+                        <option value="Bexley (also Old Bexley, Bexley Village)">Bexley (also Old Bexley, Bexley Village)</option>
+                        <option value="Bexleyheath (also Bexley New Town)">Bexleyheath (also Bexley New Town)</option>
+                        <option value="Bickley">Bickley</option>
+                        <option value="Biggin Hill">Biggin Hill</option>
+                        <option value="Blackfen">Blackfen</option>
+                        <option value="Blackfriars">Blackfriars</option>
+                        <option value="Blackheath">Blackheath</option>
+                        <option value="Blackheath Royal Standard">Blackheath Royal Standard</option>
+                        <option value="Blackwall">Blackwall</option>
+                        <option value="Blendon">Blendon</option>
+                        <option value="Bloomsbury">Bloomsbury</option>
+                        <option value="Botany Bay">Botany Bay</option>
+                        <option value="Bounds Green">Bounds Green</option>
+                        <option value="Bow">Bow</option>
+                        <option value="Bowes Park">Bowes Park</option>
+                        <option value="Brentford">Brentford</option>
+                        <option value="Brent Cross">Brent Cross</option>
+                        <option value="Brent Park">Brent Park</option>
+                        <option value="Brimsdown">Brimsdown</option>
+                        <option value="Brixton">Brixton</option>
+                        <option value="Brockley">Brockley</option>
+                        <option value="Bromley">Bromley</option>
+                        <option value="Bromley (also Bromley-by-Bow)">Bromley (also Bromley-by-Bow)</option>
+                        <option value="Bromley Common">Bromley Common</option>
+                        <option value="Brompton">Brompton</option>
+                        <option value="Brondesbury">Brondesbury</option>
+                        <option value="Brunswick Park">Brunswick Park</option>
+                        <option value="Bulls Cross">Bulls Cross</option>
+                        <option value="Burnt Oak">Burnt Oak</option>
+                        <option value="Burroughs, The">Burroughs, The</option>
+                        <option value="Camberwell">Camberwell</option>
+                        <option value="Cambridge Heath">Cambridge Heath</option>
+                        <option value="Camden Town">Camden Town</option>
+                        <option value="Canary Wharf">Canary Wharf</option>
+                        <option value="Cann Hall">Cann Hall</option>
+                        <option value="Canning Town">Canning Town</option>
+                        <option value="Canonbury">Canonbury</option>
+                        <option value="Carshalton">Carshalton</option>
+                        <option value="Castelnau">Castelnau</option>
+                        <option value="Castle Green">Castle Green</option>
+                        <option value="Catford">Catford</option>
+                        <option value="Chadwell Heath">Chadwell Heath</option>
+                        <option value="Chalk Farm">Chalk Farm</option>
+                        <option value="Charing Cross">Charing Cross</option>
+                        <option value="Charlton">Charlton</option>
+                        <option value="Chase Cross">Chase Cross</option>
+                        <option value="Cheam">Cheam</option>
+                        <option value="Chelsea">Chelsea</option>
+                        <option value="Chelsfield">Chelsfield</option>
+                        <option value="Chessington">Chessington</option>
+                        <option value="Childs Hill">Childs Hill</option>
+                        <option value="Chinatown">Chinatown</option>
+                        <option value="Chinbrook">Chinbrook</option>
+                        <option value="Chingford">Chingford</option>
+                        <option value="Chislehurst">Chislehurst</option>
+                        <option value="Chiswick">Chiswick</option>
+                        <option value="Church End">Church End</option>
+                        <option value="Church End">Church End</option>
+                        <option value="Clapham">Clapham</option>
+                        <option value="Clerkenwell">Clerkenwell</option>
+                        <option value="Cockfosters">Cockfosters</option>
+                        <option value="Colindale">Colindale</option>
+                        <option value="Collier Row">Collier Row</option>
+                        <option value="Colliers Wood">Colliers Wood</option>
+                        <option value="Colney Hatch">Colney Hatch</option>
+                        <option value="Colyers">Colyers</option>
+                        <option value="Coney Hall">Coney Hall</option>
+                        <option value="Coombe">Coombe</option>
+                        <option value="Coombe">Coombe</option>
+                        <option value="Coulsdon">Coulsdon</option>
+                        <option value="Covent Garden">Covent Garden</option>
+                        <option value="Cowley">Cowley</option>
+                        <option value="Cranford">Cranford</option>
+                        <option value="Cranham">Cranham</option>
+                        <option value="Crayford">Crayford</option>
+                        <option value="Creekmouth">Creekmouth</option>
+                        <option value="Crews Hill">Crews Hill</option>
+                        <option value="Cricklewood">Cricklewood</option>
+                        <option value="Crofton Park">Crofton Park</option>
+                        <option value="Crook Log">Crook Log</option>
+                        <option value="Crossness">Crossness</option>
+                        <option value="Crouch End">Crouch End</option>
+                        <option value="Croydon">Croydon</option>
+                        <option value="Crystal Palace">Crystal Palace</option>
+                        <option value="Cubitt Town">Cubitt Town</option>
+                        <option value="Cudham">Cudham</option>
+                        <option value="Custom House">Custom House</option>
+                        <option value="Dagenham">Dagenham</option>
+                        <option value="Dalston">Dalston</option>
+                        <option value="De Beauvoir Town">De Beauvoir Town</option>
+                        <option value="Denmark Hill">Denmark Hill</option>
+                        <option value="Deptford">Deptford</option>
+                        <option value="Derry Downs">Derry Downs</option>
+                        <option value="Dollis Hill">Dollis Hill</option>
+                        <option value="Downe">Downe</option>
+                        <option value="Downham">Downham</option>
+                        <option value="Dulwich">Dulwich</option>
+                        <option value="Ealing">Ealing</option>
+                        <option value="Earls Court">Earls Court</option>
+                        <option value="Earlsfield">Earlsfield</option>
+                        <option value="East Barnet">East Barnet</option>
+                        <option value="East Bedfont">East Bedfont</option>
+                        <option value="East Dulwich">East Dulwich</option>
+                        <option value="East Finchley">East Finchley</option>
+                        <option value="East Ham">East Ham</option>
+                        <option value="East Sheen">East Sheen</option>
+                        <option value="East Wickham">East Wickham</option>
+                        <option value="Eastcote">Eastcote</option>
+                        <option value="Eden Park">Eden Park</option>
+                        <option value="Edgware">Edgware</option>
+                        <option value="Edmonton">Edmonton</option>
+                        <option value="Eel Pie Island">Eel Pie Island</option>
+                        <option value="Elephant and Castle">Elephant and Castle</option>
+                        <option value="Elm Park">Elm Park</option>
+                        <option value="Elmers End">Elmers End</option>
+                        <option value="Elmstead">Elmstead</option>
+                        <option value="Eltham">Eltham</option>
+                        <option value="Emerson Park">Emerson Park</option>
+                        <option value="Enfield Highway">Enfield Highway</option>
+                        <option value="Enfield Lock">Enfield Lock</option>
+                        <option value="Enfield Town">Enfield Town</option>
+                        <option value="Enfield Wash">Enfield Wash</option>
+                        <option value="Erith">Erith</option>
+                        <option value="Falconwood">Falconwood</option>
+                        <option value="Farringdon">Farringdon</option>
+                        <option value="Feltham">Feltham</option>
+                        <option value="Finchley">Finchley</option>
+                        <option value="Finsbury">Finsbury</option>
+                        <option value="Finsbury Park">Finsbury Park</option>
+                        <option value="Fitzrovia">Fitzrovia</option>
+                        <option value="Foots Cray">Foots Cray</option>
+                        <option value="Forest Gate">Forest Gate</option>
+                        <option value="Forest Hill">Forest Hill</option>
+                        <option value="Forestdale">Forestdale</option>
+                        <option value="Fortis Green">Fortis Green</option>
+                        <option value="Freezywater">Freezywater</option>
+                        <option value="Friern Barnet">Friern Barnet</option>
+                        <option value="Frognal">Frognal</option>
+                        <option value="Fulham">Fulham</option>
+                        <option value="Fulwell">Fulwell</option>
+                        <option value="Gallows Corner">Gallows Corner</option>
+                        <option value="Gants Hill">Gants Hill</option>
+                        <option value="Gidea Park">Gidea Park</option>
+                        <option value="Gipsy Hill">Gipsy Hill</option>
+                        <option value="Goddington">Goddington</option>
+                        <option value="Golders Green">Golders Green</option>
+                        <option value="Goodmayes">Goodmayes</option>
+                        <option value="Gospel Oak">Gospel Oak</option>
+                        <option value="Grahame Park">Grahame Park</option>
+                        <option value="Grange Park">Grange Park</option>
+                        <option value="Greenford">Greenford</option>
+                        <option value="Greenwich">Greenwich</option>
+                        <option value="Grove Park">Grove Park</option>
+                        <option value="Grove Park">Grove Park</option>
+                        <option value="Gunnersbury">Gunnersbury</option>
+                        <option value="Hackney">Hackney</option>
+                        <option value="Hackney Central">Hackney Central</option>
+                        <option value="Hackney Marshes">Hackney Marshes</option>
+                        <option value="Hackney Wick">Hackney Wick</option>
+                        <option value="Hadley Wood">Hadley Wood</option>
+                        <option value="Haggerston">Haggerston</option>
+                        <option value="Hainault">Hainault</option>
+                        <option value="The Hale">The Hale</option>
+                        <option value="Ham">Ham</option>
+                        <option value="Hammersmith">Hammersmith</option>
+                        <option value="Hampstead">Hampstead</option>
+                        <option value="Hampstead Garden Suburb">Hampstead Garden Suburb</option>
+                        <option value="Hampton">Hampton</option>
+                        <option value="Hampton Hill">Hampton Hill</option>
+                        <option value="Hampton Wick">Hampton Wick</option>
+                        <option value="Hanwell">Hanwell</option>
+                        <option value="Hanworth">Hanworth</option>
+                        <option value="Harefield">Harefield</option>
+                        <option value="Harlesden">Harlesden</option>
+                        <option value="Harlington">Harlington</option>
+                        <option value="Harmondsworth">Harmondsworth</option>
+                        <option value="Harold Hill">Harold Hill</option>
+                        <option value="Harold Park">Harold Park</option>
+                        <option value="Harold Wood">Harold Wood</option>
+                        <option value="Harringay">Harringay</option>
+                        <option value="Harrow">Harrow</option>
+                        <option value="Harrow on the Hill">Harrow on the Hill</option>
+                        <option value="Harrow Weald">Harrow Weald</option>
+                        <option value="Hatch End">Hatch End</option>
+                        <option value="Hatton">Hatton</option>
+                        <option value="Havering-atte-Bower">Havering-atte-Bower</option>
+                        <option value="Hayes">Hayes</option>
+                        <option value="Hayes">Hayes</option>
+                        <option value="Hazelwood">Hazelwood</option>
+                        <option value="Hendon">Hendon</option>
+                        <option value="Herne Hill">Herne Hill</option>
+                        <option value="Heston">Heston</option>
+                        <option value="Highams Park">Highams Park</option>
+                        <option value="Highbury">Highbury</option>
+                        <option value="Highgate">Highgate</option>
+                        <option value="Hillingdon">Hillingdon</option>
+                        <option value="Hither Green">Hither Green</option>
+                        <option value="Holborn">Holborn</option>
+                        <option value="Holland Park">Holland Park</option>
+                        <option value="Holloway">Holloway</option>
+                        <option value="Homerton">Homerton</option>
+                        <option value="Honor Oak">Honor Oak</option>
+                        <option value="Hook">Hook</option>
+                        <option value="Hornchurch">Hornchurch</option>
+                        <option value="Horn Park">Horn Park</option>
+                        <option value="Hornsey">Hornsey</option>
+                        <option value="Hounslow">Hounslow</option>
+                        <option value="Hoxton">Hoxton</option>
+                        <option value="The Hyde">The Hyde</option>
+                        <option value="Ickenham">Ickenham</option>
+                        <option value="Ilford">Ilford</option>
+                        <option value="Isle of Dogs">Isle of Dogs</option>
+                        <option value="Isleworth">Isleworth</option>
+                        <option value="Islington">Islington</option>
+                        <option value="Kenley">Kenley</option>
+                        <option value="Kennington">Kennington</option>
+                        <option value="Kensal Green">Kensal Green</option>
+                        <option value="Kensington">Kensington</option>
+                        <option value="Kentish Town">Kentish Town</option>
+                        <option value="Kenton">Kenton</option>
+                        <option value="Keston">Keston</option>
+                        <option value="Kew">Kew</option>
+                        <option value="Kidbrooke">Kidbrooke</option>
+                        <option value="Kilburn">Kilburn</option>
+                        <option value="King's Cross">King's Cross</option>
+                        <option value="Kingsbury">Kingsbury</option>
+                        <option value="Kingston Vale">Kingston Vale</option>
+                        <option value="Kingston upon Thames">Kingston upon Thames</option>
+                        <option value="Knightsbridge">Knightsbridge</option>
+                        <option value="Ladywell">Ladywell</option>
+                        <option value="Lambeth">Lambeth</option>
+                        <option value="Lamorbey">Lamorbey</option>
+                        <option value="Lampton">Lampton</option>
+                        <option value="Lea Bridge">Lea Bridge</option>
+                        <option value="Leamouth">Leamouth</option>
+                        <option value="Leaves Green">Leaves Green</option>
+                        <option value="Lee">Lee</option>
+                        <option value="Lessness Heath">Lessness Heath</option>
+                        <option value="Lewisham">Lewisham</option>
+                        <option value="Leyton">Leyton</option>
+                        <option value="Leytonstone">Leytonstone</option>
+                        <option value="Limehouse">Limehouse</option>
+                        <option value="Lisson Grove">Lisson Grove</option>
+                        <option value="Little Ilford">Little Ilford</option>
+                        <option value="Little Venice">Little Venice</option>
+                        <option value="Locksbottom">Locksbottom</option>
+                        <option value="Longford">Longford</option>
+                        <option value="Longlands">Longlands</option>
+                        <option value="Lower Clapton">Lower Clapton</option>
+                        <option value="Lower Morden">Lower Morden</option>
+                        <option value="Loxford">Loxford</option>
+                        <option value="Maida Vale">Maida Vale</option>
+                        <option value="Malden Rushett">Malden Rushett</option>
+                        <option value="Manor House">Manor House</option>
+                        <option value="Manor Park">Manor Park</option>
+                        <option value="Marks Gate">Marks Gate</option>
+                        <option value="Maryland">Maryland</option>
+                        <option value="Marylebone (also St Marylebone)">Marylebone (also St Marylebone)</option>
+                        <option value="Mayfair">Mayfair</option>
+                        <option value="Maze Hill">Maze Hill</option>
+                        <option value="Merton Park">Merton Park</option>
+                        <option value="Middle Park">Middle Park</option>
+                        <option value="Mile End">Mile End</option>
+                        <option value="Mill Hill">Mill Hill</option>
+                        <option value="Millbank">Millbank</option>
+                        <option value="Millwall">Millwall</option>
+                        <option value="Mitcham">Mitcham</option>
+                        <option value="Monken Hadley">Monken Hadley</option>
+                        <option value="Morden">Morden</option>
+                        <option value="Morden Park">Morden Park</option>
+                        <option value="Mortlake">Mortlake</option>
+                        <option value="Motspur Park">Motspur Park</option>
+                        <option value="Mottingham">Mottingham</option>
+                        <option value="Muswell Hill">Muswell Hill</option>
+                        <option value="Neasden">Neasden</option>
+                        <option value="New Addington">New Addington</option>
+                        <option value="New Barnet">New Barnet</option>
+                        <option value="New Cross">New Cross</option>
+                        <option value="New Eltham">New Eltham</option>
+                        <option value="New Malden">New Malden</option>
+                        <option value="New Southgate">New Southgate</option>
+                        <option value="Newbury Park">Newbury Park</option>
+                        <option value="Newington">Newington</option>
+                        <option value="Nine Elms">Nine Elms</option>
+                        <option value="Noak Hill">Noak Hill</option>
+                        <option value="Norbiton">Norbiton</option>
+                        <option value="Norbury">Norbury</option>
+                        <option value="North Cray">North Cray</option>
+                        <option value="North End">North End</option>
+                        <option value="North Finchley">North Finchley</option>
+                        <option value="North Harrow">North Harrow</option>
+                        <option value="North Kensington">North Kensington</option>
+                        <option value="North Ockendon">North Ockendon</option>
+                        <option value="North Sheen">North Sheen</option>
+                        <option value="North Woolwich">North Woolwich</option>
+                        <option value="Northolt">Northolt</option>
+                        <option value="Northumberland Heath">Northumberland Heath</option>
+                        <option value="Northumberland Park">Northumberland Park</option>
+                        <option value="Northwood">Northwood</option>
+                        <option value="Norwood Green">Norwood Green</option>
+                        <option value="Notting Hill">Notting Hill</option>
+                        <option value="Nunhead">Nunhead</option>
+                        <option value="Oakleigh Park">Oakleigh Park</option>
+                        <option value="Old Coulsdon">Old Coulsdon</option>
+                        <option value="Old Ford">Old Ford</option>
+                        <option value="Old Malden">Old Malden</option>
+                        <option value="Old Oak Common">Old Oak Common</option>
+                        <option value="Orpington">Orpington</option>
+                        <option value="Osidge">Osidge</option>
+                        <option value="Osterley">Osterley</option>
+                        <option value="Oval">Oval</option>
+                        <option value="Paddington">Paddington</option>
+                        <option value="Palmers Green">Palmers Green</option>
+                        <option value="Park Royal">Park Royal</option>
+                        <option value="Parsons Green">Parsons Green</option>
+                        <option value="Peckham">Peckham</option>
+                        <option value="Penge">Penge</option>
+                        <option value="Pentonville">Pentonville</option>
+                        <option value="Perivale">Perivale</option>
+                        <option value="Petersham">Petersham</option>
+                        <option value="Petts Wood">Petts Wood</option>
+                        <option value="Pimlico">Pimlico</option>
+                        <option value="Pinner">Pinner</option>
+                        <option value="Plaistow">Plaistow</option>
+                        <option value="Plumstead">Plumstead</option>
+                        <option value="Ponders End">Ponders End</option>
+                        <option value="Poplar">Poplar</option>
+                        <option value="Pratt's Bottom">Pratt's Bottom</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Primrose Hill">Primrose Hill</option>
+                        <option value="Purley">Purley</option>
+                        <option value="Putney">Putney</option>
+                        <option value="Queen's Park">Queen's Park</option>
+                        <option value="Queensbury">Queensbury</option>
+                        <option value="Rainham">Rainham</option>
+                        <option value="Ratcliff">Ratcliff</option>
+                        <option value="Rayners Lane">Rayners Lane</option>
+                        <option value="Raynes Park">Raynes Park</option>
+                        <option value="Redbridge">Redbridge</option>
+                        <option value="Richmond">Richmond</option>
+                        <option value="Riddlesdown">Riddlesdown</option>
+                        <option value="Roehampton">Roehampton</option>
+                        <option value="Romford">Romford</option>
+                        <option value="Rotherhithe">Rotherhithe</option>
+                        <option value="Ruislip">Ruislip</option>
+                        <option value="Rush Green">Rush Green</option>
+                        <option value="Ruxley">Ruxley</option>
+                        <option value="Sanderstead">Sanderstead</option>
+                        <option value="Sands End">Sands End</option>
+                        <option value="Selhurst">Selhurst</option>
+                        <option value="Selsdon">Selsdon</option>
+                        <option value="Seven Kings">Seven Kings</option>
+                        <option value="Seven Sisters">Seven Sisters</option>
+                        <option value="Shacklewell">Shacklewell</option>
+                        <option value="Shadwell">Shadwell</option>
+                        <option value="Shepherd's Bush">Shepherd's Bush</option>
+                        <option value="Shirley">Shirley</option>
+                        <option value="Shooter's Hill">Shooter's Hill</option>
+                        <option value="Shoreditch">Shoreditch</option>
+                        <option value="Sidcup">Sidcup</option>
+                        <option value="Silvertown">Silvertown</option>
+                        <option value="Sipson">Sipson</option>
+                        <option value="Slade Green">Slade Green</option>
+                        <option value="Snaresbrook">Snaresbrook</option>
+                        <option value="Soho">Soho</option>
+                        <option value="Somerstown">Somerstown</option>
+                        <option value="South Croydon">South Croydon</option>
+                        <option value="South Hackney">South Hackney</option>
+                        <option value="South Harrow">South Harrow</option>
+                        <option value="South Hornchurch">South Hornchurch</option>
+                        <option value="South Kensington">South Kensington</option>
+                        <option value="South Norwood">South Norwood</option>
+                        <option value="South Ruislip">South Ruislip</option>
+                        <option value="South Wimbledon">South Wimbledon</option>
+                        <option value="South Woodford">South Woodford</option>
+                        <option value="South Tottenham">South Tottenham</option>
+                        <option value="Southend">Southend</option>
+                        <option value="Southall">Southall</option>
+                        <option value="Southborough">Southborough</option>
+                        <option value="Southfields">Southfields</option>
+                        <option value="Southgate">Southgate</option>
+                        <option value="Spitalfields">Spitalfields</option>
+                        <option value="St Helier">St Helier</option>
+                        <option value="St James's">St James's</option>
+                        <option value="St Margarets">St Margarets</option>
+                        <option value="St Giles">St Giles</option>
+                        <option value="St Johns">St Johns</option>
+                        <option value="St John's Wood">St John's Wood</option>
+                        <option value="St Luke's">St Luke's</option>
+                        <option value="St Mary Cray">St Mary Cray</option>
+                        <option value="St Pancras">St Pancras</option>
+                        <option value="St Paul's Cray">St Paul's Cray</option>
+                        <option value="Stamford Hill">Stamford Hill</option>
+                        <option value="Stanmore">Stanmore</option>
+                        <option value="Stepney">Stepney</option>
+                        <option value="Stockwell">Stockwell</option>
+                        <option value="Stoke Newington">Stoke Newington</option>
+                        <option value="Stonebridge">Stonebridge</option>
+                        <option value="Stratford">Stratford</option>
+                        <option value="Strawberry Hill">Strawberry Hill</option>
+                        <option value="Streatham">Streatham</option>
+                        <option value="Stroud Green">Stroud Green</option>
+                        <option value="Sudbury">Sudbury</option>
+                        <option value="Sundridge">Sundridge</option>
+                        <option value="Surbiton">Surbiton</option>
+                        <option value="Surrey Quays">Surrey Quays</option>
+                        <option value="Sutton">Sutton</option>
+                        <option value="Swiss Cottage">Swiss Cottage</option>
+                        <option value="Sydenham">Sydenham (also Lower Sydenham, Upper Sydenham)</option>
+                        <option value="Sydenham Hill">Sydenham Hill</option>
+                        <option value="Teddington">Teddington</option>
+                        <option value="Temple">Temple</option>
+                        <option value="Temple Fortune">Temple Fortune</option>
+                        <option value="Thamesmead">Thamesmead</option>
+                        <option value="Thornton Heath">Thornton Heath</option>
+                        <option value="Tokyngton">Tokyngton</option>
+                        <option value="Tolworth">Tolworth</option>
+                        <option value="Tooting">Tooting</option>
+                        <option value="Tooting Bec">Tooting Bec</option>
+                        <option value="Tottenham">Tottenham</option>
+                        <option value="Tottenham Green">Tottenham Green</option>
+                        <option value="Tottenham Hale">Tottenham Hale</option>
+                        <option value="Totteridge">Totteridge</option>
+                        <option value="Tower Hill">Tower Hill</option>
+                        <option value="Tufnell Park">Tufnell Park</option>
+                        <option value="Tulse Hill">Tulse Hill</option>
+                        <option value="Turnpike Lane">Turnpike Lane</option>
+                        <option value="Twickenham">Twickenham</option>
+                        <option value="Upminster">Upminster</option>
+                        <option value="Upminster Bridge">Upminster Bridge</option>
+                        <option value="Upper Clapton">Upper Clapton</option>
+                        <option value="Upper Holloway">Upper Holloway</option>
+                        <option value="Upper Norwood">Upper Norwood</option>
+                        <option value="Upper Ruxley">Upper Ruxley</option>
+                        <option value="Upper Walthamstow">Upper Walthamstow</option>
+                        <option value="Upton">Upton</option>
+                        <option value="Upton Park">Upton Park</option>
+                        <option value="Uxbridge">Uxbridge</option>
+                        <option value="Vauxhall">Vauxhall</option>
+                        <option value="Waddon">Waddon</option>
+                        <option value="Wallington">Wallington</option>
+                        <option value="Walthamstow">Walthamstow</option>
+                        <option value="Walthamstow Village">Walthamstow Village</option>
+                        <option value="Walworth">Walworth</option>
+                        <option value="Wandsworth">Wandsworth</option>
+                        <option value="Wanstead">Wanstead</option>
+                        <option value="Wapping">Wapping</option>
+                        <option value="Wealdstone">Wealdstone</option>
+                        <option value="Well Hall">Well Hall</option>
+                        <option value="Welling">Welling</option>
+                        <option value="Wembley">Wembley</option>
+                        <option value="Wembley Park">Wembley Park</option>
+                        <option value="Wennington">Wennington</option>
+                        <option value="West Brompton">West Brompton</option>
+                        <option value="West Drayton">West Drayton</option>
+                        <option value="West Ealing">West Ealing</option>
+                        <option value="West Green">West Green</option>
+                        <option value="West Hackney">West Hackney</option>
+                        <option value="West Ham">West Ham</option>
+                        <option value="West Hampstead">West Hampstead</option>
+                        <option value="West Harrow">West Harrow</option>
+                        <option value="West Heath">West Heath</option>
+                        <option value="West Hendon">West Hendon</option>
+                        <option value="West Kensington">West Kensington</option>
+                        <option value="West Norwood">West Norwood</option>
+                        <option value="West Wickham">West Wickham</option>
+                        <option value="Westcombe Park">Westcombe Park</option>
+                        <option value="Westminster">Westminster</option>
+                        <option value="Whetstone">Whetstone</option>
+                        <option value="White City">White City</option>
+                        <option value="Whitechapel">Whitechapel</option>
+                        <option value="Widmore">Widmore (also Widmore Green)</option>
+                        <option value="Whitton">Whitton</option>
+                        <option value="Willesden">Willesden</option>
+                        <option value="Wimbledon">Wimbledon</option>
+                        <option value="Winchmore Hill">Winchmore Hill</option>
+                        <option value="Wood Green">Wood Green</option>
+                        <option value="Woodford">Woodford</option>
+                        <option value="Woodford Green">Woodford Green</option>
+                        <option value="Woodlands">Woodlands</option>
+                        <option value="Woodside">Woodside</option>
+                        <option value="Woodside Park">Woodside Park</option>
+                        <option value="Woolwich">Woolwich</option>
+                        <option value="Worcester Park">Worcester Park</option>
+                        <option value="Wormwood Scrubs">Wormwood Scrubs</option>
+                        <option value="Yeading">Yeading</option>
+                        <option value="Yiewsley">Yiewsley</option>
+                    </optgroup>
+                    </select>
 
                 </form>
 
