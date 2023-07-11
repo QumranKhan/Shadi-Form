@@ -113,7 +113,17 @@ select {
   height: 38px;
 }
 
+#text-box{
+  font-size: 13px;
+    width: 300px;
+    height: 21px;
+}
 
+#stateArea{
+  font-size: 13px;
+  width: 230px; 
+  height: 21px;
+}
 
 
 
