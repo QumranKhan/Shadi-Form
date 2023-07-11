@@ -1,5 +1,14 @@
+  /*Style the navbar*/
+nav {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+  }
+  
+
 /* Style the form container */
 .container {
+    
     max-width: 800px;
     margin: 0 auto;
     border-radius: 10px;
@@ -23,7 +32,10 @@
     color: #666666;
   }
 
-/*Upload image*/
+
+  
+
+/*Upload Picture*/
 output{
     width: 100%;
     min-height: 150px;
@@ -65,41 +77,41 @@ output{
     visibility: hidden;
   }
 
+form {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 /*Filled by*/
 #filled-by{
     font-size: 13px;
-    width: 80px; 
+    max-width: 100%; 
     height: 39px;
     max-block-size: 60;
 }
 
+/*Age and height*/
+input[type="number"],
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input
+select {
+  font-size: 13px;
+  width: 190px;
+  height: 21px;
+  max-width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-
- section {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"] {
-    font-size: 13px;
-    width: 300px;
-    height: 21px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  input[type="text"]:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  }
-  
+select {
+  width: 150px;
+  height: 38px;
+}
 
 
 
@@ -119,9 +131,8 @@ output{
 
 
 
-
-
-  /* Style for Radio buttons */
+/*
+  /* Style for Radio buttons 
   input [type="radio button"] {
   
     display: inline-block;
@@ -133,7 +144,7 @@ output{
   
   }
   
-  /*style for check boxes */
+  /*style for check boxes 
   input[type="checkbox"] {
       display: inline-block;
       vertical-align: middle;
@@ -144,7 +155,7 @@ output{
     }
   
   
-  /* Style the form labels */
+  /* Style the form labels 
   label {
     display: inline-block;
     margin-bottom: 8px;
@@ -152,7 +163,7 @@ output{
     
   }
    
-  /* Style the form buttons */
+  /* Style the form buttons 
   button {
     width: 100%;
     padding: 12px;
@@ -160,19 +171,19 @@ output{
     border-radius: 4px;
   }
   
-  /* Style the submit button */
+  /* Style the submit button 
   .submit-button {
     background-color: #0be494;
     color: white;
   }
   
-  /* Style the reset button */
+  /* Style the reset button 
   .reset-button {
     background-color: #eb0e0e;
     color: white;
   }
   
-  /* Add some space between the buttons */
+  /* Add some space between the buttons 
   .button-group {
     display: flex;
   }
@@ -192,25 +203,4 @@ output{
    outline-color: #666666;
   
   }
-  
-  /*Style the navbar*/
-  header{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:#cccccc;
-    padding: 20px 20px;
-    margin-bottom: 20px;
-  }
-
-  /*Style the links inside the navbar*/
-  header {
-    margin-right: 10px;;
-
-  }
-  
-  /*Float navbar links to the right*/
-  header {
-    float: right;
-    color: rgb(223, 46, 188);
-  }
-  
-  
+*/

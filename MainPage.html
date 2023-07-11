@@ -10,13 +10,16 @@
 
     <body>
         <!--Navigation Bar-->
-        <header>
-            <a class="active" href="./index.html">Home</a>
-            <a href="./profile.html">Profiles</a>
-            <a href="./islamic info.html">Islamic Information</a>
-            <a href="./FAQs.html">FAQ's</a>
-            <a href="./contact.html">Contact Us</a>
-        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="navbar">
+                <a class="active" href="./index.html">Home</a>
+                <a href="./profile.html">Profiles</a>
+                <a href="./islamic info.html">Islamic Information</a>
+                <a href="./FAQs.html">FAQ's</a>
+                <a href="./contact.html">Contact Us</a>
+              </div>
+            </div>
+        </nav>
 
         <main>
             <div class = "container">
@@ -48,6 +51,8 @@
                     </select>
                     <input type="text" id="candidate_name" name="candidate_name" placeholder="Relationship to the guardian otherwise enter N/A">
                     
+                    <br>
+
                     <!--Contact Information-->
                     <label for="Contactname">Contact Name:</label>
                     <input type="text" id="Contact" name="Contact" required placeholder="Name of Contact">
@@ -58,12 +63,65 @@
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required placeholder="Contact ONLY UK email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                     
+                    
+
                     <!--Candidate name-->
                     <label for="candidate_name">Candidate Name:</label>
                     <input type="text" id="candidate_name" name="candidate_name" required placeholder="State Candidate's Name here">
 
-                    <!--Marital status-->
                     
+
+                    <!--Marital status-->
+                    <label for="marital_status">Candidate's Marital Status:</label>
+                    <a href="https://www.familylaw.co.uk/news_and_comment/talaq-khula-faskh-tafweedh-the-different-methods-of-islamic-separation-part-1">Islamic Marital Explanations</a>
+                    <br>
+                    <label><input type="checkbox" name="marital_status[]" value="single">Single</label>
+                    <label><input type="checkbox" name="marital_status[]" value="divorced">Divorced</label>
+                    <label><input type="checkbox" name="marital_status[]" value="civil_divorced">Civil Divorced (Decree Nisi)</label>
+                    <label><input type="checkbox" name="marital_status[]" value="no_ruksati">Short Marriage / Divorced, No Ruksati</label>
+                    <label><input type="checkbox" name="marital_status[]" value="widowed">Widowed</label>
+                    <label><input type="checkbox" name="marital_status[]" value="khula">Khula (Separation by way of consent between the parties) See explanation above</label>
+                    <label><input type="checkbox" name="marital_status[]" value="faskh">Faskh-e-Nikah (Dissolution of Marriage) See explanation above</label>
+                    <label><input type="checkbox" name="marital_status[]" value="talaq">Talaq (Granting of Divorce by the Husband) See explanation above</label>
+                    <label><input type="checkbox" name="marital_status[]" value="tafweedh-e-talaq">Tafweedh-e-Talaq (When the power of Talaq is transferred to the Wife) See explanation above</label>
+                    <label><input type="checkbox" name="marital_status[]" value="other">Other, please explain in box or enter N/A</label>
+                    <input type="text" id="please_explain_here" name="please_explain_here" placeholder="Please explain here or enter N/A" maxlength="210">
+
+                    <!--Age and Height-->
+                    <label for="age">Candidate's Current Age:</label>
+                    <input type="number" id="age" name="age" required placeholder="Select your closest age">
+                    
+                    <label for="height">Candidate's Current Height:</label>
+                    <select id="height" name="height">
+                    <option value="">Select</option>
+                    <option value="150">Less than 4'11&quot; (150cm)</option>
+                    <option value="152.4">4'11&quot; (150cm)</option>
+                    <option value="154.9">5'0&quot; (152.4cm)</option>
+                    <option value="157.5">5'1&quot; (154.9cm)</option>
+                    <option value="160">5'2&quot; (157.5cm)</option>
+                    <option value="162.6">5'3&quot; (160cm)</option>
+                    <option value="165.1">5'4&quot; (162.6cm)</option>
+                    <option value="167.6">5'5&quot; (165.1cm)</option>
+                    <option value="170.2">5'6&quot; (167.6cm)</option>
+                    <option value="172.7">5'7&quot; (170.2cm)</option>
+                    <option value="175.3">5'8&quot; (172.7cm)</option>
+                    <option value="177.8">5'9&quot; (175.3cm)</option>
+                    <option value="180.3">5'10&quot; (177.8cm)</option>
+                    <option value="182.9">5'11&quot; (180.3cm)</option>
+                    <option value="185.4">6'0&quot; (182.9cm)</option>
+                    <option value="188">6'1&quot; (185.4cm)</option>
+                    <option value="190.5">6'2&quot; (188cm)</option>
+                    <option value="193">6'3&quot; (190.5cm)</option>
+                    <option value="195.6">6'4&quot; (193cm)</option>
+                    <option value="198.1">6'5&quot; (195.6cm)</option>
+                    <option value="200.7">6'6&quot; (198.1cm)</option>
+                    <option value="203.2">6'7&quot; (200.7cm)</option>
+                    </select>
+                    
+
+                    <!--Complextion-->
+
+
                 </form>
 
             </div>
