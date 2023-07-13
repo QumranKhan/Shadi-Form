@@ -28,3 +28,37 @@ input.addEventListener("change", () => {
     imagesArray.splice(index, 1)
     displayImages()
   }
+
+/*Next page to fill out partners details*/
+
+const form = document.getElementById('multi-page-form');
+const nextBtn = document.getElementById('next-btn');
+const prevBtn = document.getElementById('prev-btn');
+
+let currentPage = 1;
+const totalPages = form.children.length;
+
+function showPage(pageNumber) {
+  for (let i = 0; i < form.children.length; i++) {
+    form.children[i].style.display = i + 1 === pageNumber ? 'block' : 'none';
+  }
+}
+
+function nextPage() {
+  if (currentPage < totalPages) {
+    currentPage++;
+    showPage(currentPage);
+  }
+}
+
+function prevPage() {
+  if (currentPage > 1) {
+    currentPage--;
+    showPage(currentPage);
+  }
+}
+
+nextBtn.addEventListener('click', nextPage);
+prevBtn.addEventListener('click', prevPage);
+
+showPage(currentPage);
