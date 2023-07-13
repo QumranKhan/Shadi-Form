@@ -1,23 +1,15 @@
-  /*Style the navbar*/
-nav {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 20px 20px;
-    margin-bottom: 20px;
-  }
-  
-
 /* Style the form container */
 .container {
     
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
-  }
-   
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
   /* Style the form title */
   h1 {
     font-size: 32px;
@@ -31,9 +23,6 @@ nav {
     font-style: italic;
     color: #666666;
   }
-
-
-  
 
 /*Upload Picture*/
 output{
@@ -77,12 +66,39 @@ output{
     visibility: hidden;
   }
 
+/*Form*/
 form {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
 }
+/*Label Styles*/
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+/*Input styles*/
+form input[type="text"],
+form input[type="email"],
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/*Button Styles*/
+form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
 
 /*Filled by*/
 #filled-by{
