@@ -78,13 +78,15 @@ form select [id="gender"]
 
 /*Label Styles*/
 form label {
-  display: block;
-  margin-bottom: 5px;
+  display: inline-block;
   padding: 10px;
   font-weight: bold;
+  padding-right: 15px;
+  padding-left: 10px;
+  padding-bottom: 0.5rem;
 }
 /*Input styles*/
-form inpuy [type="number"],
+form input [type="number"],
 form input [type="tel"],
 form input[type="text"],
 form input[type="email"],
@@ -110,6 +112,11 @@ select {
   width: 150px;
   height: 38px;
 }
+
+
+
+
+
 
 
 
